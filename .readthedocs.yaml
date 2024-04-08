@@ -3,14 +3,15 @@ version: 2
 
 # Set the OS, Python version and other tools you might need
 build:
-os: ubuntu-22.04
-tools:
+  os: ubuntu-22.04
+  tools:
     python: "3.12"
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
-configuration: source/conf.py
+  configuration: source/conf.py
+
 
 python:
-install:
+  install:
     - requirements: requirements.txt
