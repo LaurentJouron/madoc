@@ -10,3 +10,9 @@ Python
 
     Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
     documentation `Python <https://docs.python.org/3/>`_.
+
+.. toctree::
+   :maxdepth: 3
+
+   pep8/index
+   library/index

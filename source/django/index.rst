@@ -10,3 +10,9 @@ Django
 
     Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
     documentation `Django <https://www.djangoproject.com/>`_.
+
+.. toctree::
+   :maxdepth: 3
+
+   drf/index
+   wagtail/index

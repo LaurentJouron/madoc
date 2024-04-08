@@ -40,11 +40,6 @@ Quick reference
 Quick links
 -----------
 
-.. _contributing:
-
-Contributing
-------------
-
 Proposing changes to Python itself
 ----------------------------------
 
@@ -56,11 +51,6 @@ Additional resources
 
 Code of conduct
 ---------------
-
-Status of Python branches
--------------------------
-
-Moved to :ref:`versions`
 
 .. _contents:
 
@@ -76,12 +66,9 @@ Full table of contents
    github/index
    sentry/index
    circleci/index
-   flake8/index
    sphinx/index
    pytest/index
    docstrings/index
-   contributing/index
-   versions
 
 .. _Buildbot status: https://www.python.org/dev/buildbot/
 .. _Misc directory: https://github.com/python/cpython/tree/main/Misc

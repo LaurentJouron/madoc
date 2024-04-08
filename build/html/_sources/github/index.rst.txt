@@ -10,3 +10,8 @@ Github
 
     Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
     documentation `Github <https://docs.github.com/fr>`_.
+
+.. toctree::
+   :maxdepth: 3
+
+   actions/index
