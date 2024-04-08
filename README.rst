@@ -1,5 +1,5 @@
-The CPython Developer's Guide
-=============================
+Madoc
+=====
 
 |ReadTheDocs| |Discourse| |Codestyle|
 
