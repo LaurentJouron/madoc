@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sphinx = "*"
+furo = "*"
+jinja2 = "*"
+sphinx-autobuild = "*"
+sphinx-inline-tabs = "*"
+sphinx-lint = "*"
+sphinx-notfound-page = "*"
+sphinx-copybutton = "*"
+sphinxext-opengraph = "*"
+sphinxext-rediraffe = "*"
+python-docs-theme = "*"
+blurb = "*"
+imagesize = "*"
+markupsafe = "*"
+pygments = "*"
+requests = "*"
+snowballstemmer = "*"
+matplotlib = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
