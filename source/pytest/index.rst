@@ -12,4 +12,6 @@ Pytest
         :alt: Django Badge
         :target: https://www.djangoproject.com/
     
-    The configuration below is very inspired by the official file `pytest-django <https://pytest-django.readthedocs.io/en/latest/>`_ 
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
+    `pytest-django <https://pytest-django.readthedocs.io/en/latest/>`_ 

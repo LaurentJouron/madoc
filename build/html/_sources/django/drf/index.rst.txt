@@ -8,5 +8,6 @@ DRF
         :alt: Django rest framework Badge
         :target: https://www.django-rest-framework.org/
 
-    Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
-    documentation `Django rest framework <https://www.django-rest-framework.org/>`_.
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
+    `Django rest framework <https://www.django-rest-framework.org/>`_.

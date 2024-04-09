@@ -17,9 +17,11 @@ Docstrings
         :target: https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
 
 
-    Pour voir la **documentation officielle** cliquez sur les badges. Je rappelle que ce sont des notes personnelles que je mets à disposition.
-    Ces notes ne se substituent au aucun moment à la documentation officielle de `google <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_ ou 
-    `numpy/scipy <https://numpydoc.readthedocs.io/en/latest/format.html>`_. Il y a de belles explications sur `Sphinx <https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html>`_.
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages car ces notes ne les substituent 
+    `google <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_ , 
+    `numpy/scipy <https://numpydoc.readthedocs.io/en/latest/format.html>`_ ou 
+    `Sphinx <https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html>`_.
 
 Qu'est ce que les docstrings
 ----------------------------

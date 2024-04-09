@@ -8,5 +8,6 @@ Sphinx
         :alt: Sphinx Badge
         :target: https://www.sphinx-doc.org/en/master/index.html
 
-    **After creating the project** and activating the virtual environment, you can start.
-    To start create documentation, you must install `Sphinx <https://www.sphinx-doc.org/en/master/index.html>`_ 
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages  
+    `Sphinx <https://www.sphinx-doc.org/en/master/index.html>`_ 

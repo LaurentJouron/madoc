@@ -8,8 +8,9 @@ Python
         :alt: Python Badge
         :target: https://docs.python.org/3/
 
-    Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
-    documentation `Python <https://docs.python.org/3/>`_.
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
+    `Python <https://docs.python.org/3/>`_.
 
 6. Once you fixed the issue, run the tests, and the patchcheck:
 
@@ -36,3 +37,4 @@ Python
 
    pep8/index
    library/index
+   virtual_environment/index

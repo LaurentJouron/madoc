@@ -8,8 +8,9 @@ Github
         :alt: Github Badge
         :target: https://docs.github.com/fr
 
-    Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
-    documentation `Github <https://docs.github.com/fr>`_.
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
+    `Github <https://docs.github.com/fr>`_.
 
 .. toctree::
    :maxdepth: 3

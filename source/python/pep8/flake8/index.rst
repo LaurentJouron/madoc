@@ -12,5 +12,6 @@ Flake8
         :alt: Flake8-HTML Badge
         :target: https://pypi.org/project/flake8-html/
 
-    Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
-    documentation `Flake8 <https://flake8.pycqa.org/>`_ et `Flake8-HTML <https://pypi.org/project/flake8-html/>`_.
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
+    `Flake8 <https://flake8.pycqa.org/>`_ et `Flake8-HTML <https://pypi.org/project/flake8-html/>`_.

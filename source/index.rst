@@ -63,6 +63,14 @@ Framework
    :alt: Django Badge
    :target: https://www.djangoproject.com/
 
+.. image:: https://img.shields.io/badge/django%20rest%20framework-%237F2D2D.svg?style=for-the-badge&logo=django&logoColor=white
+   :alt: Django rest framework Badge
+   :target: https://www.django-rest-framework.org/
+
+.. image:: https://img.shields.io/badge/wagtail-%232E1F5E.svg?style=for-the-badge&logo=wagtail&logoColor=white
+   :alt: Wagtail Badge
+   :target: https://wagtail.org/
+
 
 Bases de données
 ----------------
@@ -71,25 +79,45 @@ Bases de données
    :alt: Sqlite Badge
    :target: https://www.sqlite.org/index.html
 
+.. image:: https://img.shields.io/badge/PostgreSQL-%23336791.svg?style=for-the-badge&logo=postgresql&logoColor=white
+   :alt: Postgres Badge
+   :target: https://www.postgresql.org/docs/
 
-Indispensable
--------------
+.. image:: https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white
+   :alt: Mysql Badge
+   :target: https://dev.mysql.com/doc/
+
+
+Github
+------
 
 .. image:: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
    :alt: Gihub Badge
    :target: https://github.com/
+
+.. image:: https://img.shields.io/badge/docker%20action-%2324292F.svg?style=for-the-badge&logo=github&logoColor=white
+   :alt: GitHub actions Badge
+   :target: https://github.com/features/actions
+
+
+Docker
+------
 
 .. image:: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
    :alt: Docker Badge
    :target: https://docs.docker.com/
 
 
-Pratiques d'intégration continue
---------------------------------
+Intégration continue
+--------------------
 
 .. image:: https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white
    :alt: CircleCi Badge
    :target: https://circleci.com/docs/
+
+
+Deploiement
+-----------
 
 .. image:: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
    :alt: Heroku Badge
@@ -111,13 +139,6 @@ Test
    :alt: Sentry Badge
    :target: https://docs.sentry.io/
 
-.. image:: https://img.shields.io/badge/flake8-%234B8BBE.svg?style=for-the-badge&logo=flake8&logoColor=white
-   :alt: Flake8 Badge
-   :target: https://flake8.pycqa.org/
-
-.. image:: https://img.shields.io/badge/Flake8--HTML-%234B8BBE.svg?style=for-the-badge&logo=flake8&logoColor=white
-    :alt: Flake8-HTML Badge
-    :target: https://pypi.org/project/flake8-html/
 
 .. image:: https://img.shields.io/badge/pytest--django-%232C8736.svg?style=for-the-badge&logo=pytest&logoColor=white
    :alt: Pytest-Django Badge
@@ -144,6 +165,36 @@ Docstrings
    :target: https://numpydoc.readthedocs.io/en/latest/format.html
 
 
+Library
+-------
+
+.. image:: https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white
+   :alt: Pandas Badge
+   :target: https://pandas.pydata.org/docs/
+
+
+Convention
+----------
+
+.. image:: https://img.shields.io/badge/PEP8-%23006699.svg?style=for-the-badge
+   :alt: pep8 Badge
+   :target: https://peps.python.org/pep-0008/
+
+.. image:: https://img.shields.io/badge/flake8-%234B8BBE.svg?style=for-the-badge&logo=flake8&logoColor=white
+   :alt: Flake8 Badge
+   :target: https://flake8.pycqa.org/
+
+.. image:: https://img.shields.io/badge/Flake8--HTML-%234B8BBE.svg?style=for-the-badge&logo=flake8&logoColor=white
+    :alt: Flake8-HTML Badge
+    :target: https://pypi.org/project/flake8-html/
+
+
+Enrironnement virtuel
+---------------------
+
+.. image:: https://img.shields.io/badge/pipenv-%234B8BBE.svg?style=for-the-badge&logo=pypi&logoColor=white
+   :alt: Pipenv Badge
+   :target: https://pipenv.pypa.io/en/latest/
 
 
 .. _contents:

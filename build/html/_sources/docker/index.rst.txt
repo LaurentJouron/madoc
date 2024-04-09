@@ -8,8 +8,9 @@ Docker
         :alt: Docker Badge
         :target: https://www.sqlite.org/index.html
 
-    Parameterizations are done to a specific project. To parameterize to the other project, go to the official 
-    documentation `Docker <https://docs.docker.com/>`_.
+    Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
+    `Docker <https://docs.docker.com/>`_.
 
 .. toctree::
    :maxdepth: 3
