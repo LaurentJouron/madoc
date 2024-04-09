@@ -57,7 +57,7 @@ nitpicky = True
 html_theme = "furo"
 html_theme_options = {
     "source_repository": "https://github.com/LaurentJouron/madoc",
-    "source_branch": "main",
+    "source_branch": "blob/main/source",
 }
 html_static_path = ["_static"]
 html_css_files = [
