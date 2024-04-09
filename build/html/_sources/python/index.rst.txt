@@ -38,3 +38,4 @@ Python
    pep8/index
    library/index
    virtual_environment/index
+   algorithme/index

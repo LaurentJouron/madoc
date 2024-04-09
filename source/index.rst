@@ -214,6 +214,7 @@ Full table of contents
    sphinx/index
    pytest/index
    docstrings/index
+   youtube/index
 
 .. _Buildbot status: https://www.python.org/dev/buildbot/
 .. _Misc directory: https://github.com/python/cpython/tree/main/Misc
