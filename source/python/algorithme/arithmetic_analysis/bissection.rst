@@ -1,3 +1,5 @@
+.. _bissection:
+
 ==========
 Bissection
 ==========
@@ -10,6 +12,9 @@ fonction du signe du résultat, l'algorithme choisit le sous-intervalle contenan
 le processus jusqu'à ce qu'une précision suffisante soit atteinte. Cette méthode est particulièrement 
 utile pour les fonctions continues mais peut nécessiter un nombre important d'itérations pour atteindre 
 la précision souhaitée.
+
+Fonction
+--------
 
 .. code-block:: Python
 
@@ -62,3 +67,11 @@ la précision souhaitée.
         return math.pow(x, 3) - 2*x - 5
 
     print(bisection(f, 1, 1000))
+
+
+Resultats
+---------
+
+.. code-block:: Python
+
+    2.0945515197818168

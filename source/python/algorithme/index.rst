@@ -5,4 +5,4 @@ Algorithme
 .. toctree::
    :maxdepth: 3
 
-   bissection
+   arithmetic_analysis/index

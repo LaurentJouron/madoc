@@ -3,19 +3,21 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Flake8" />
+<meta property="og:title" content="Lu decomposition" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://laurentjouron.github.io/python/pep8/flake8/index.html" />
+<meta property="og:url" content="https://laurentjouron.github.io/python/algorithme/arithmetic_analysis/lu_decomposition.html" />
 <meta property="og:site_name" content="Madoc" />
+<meta property="og:description" content="La fonction lu_decompose réalise la décomposition LU d’une matrice carrée en une matrice triangulaire inférieure (L) et une matrice triangulaire supérieure (U) en utilisant la méthode de décomposit..." />
 <meta property="og:image" content="https://laurentjouron.github.io/_static/ikigai-cercle.png" />
 <meta property="og:image:alt" content="Madoc" />
+<meta name="description" content="La fonction lu_decompose réalise la décomposition LU d’une matrice carrée en une matrice triangulaire inférieure (L) et une matrice triangulaire supérieure (U) en utilisant la méthode de décomposit..." />
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 <meta name="theme-color" content="#3776ab">
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Library" href="../../library/index.html" /><link rel="prev" title="Pep8" href="../index.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Django" href="../../../django/index.html" /><link rel="prev" title="Intersection" href="intersection.html" />
 
     <link rel="shortcut icon" href="../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
-        <title>Flake8 - Documentation Madoc</title>
+        <title>Lu decomposition - Documentation Madoc</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -146,7 +148,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -171,8 +173,8 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../../index.html">Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Python</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current has-children"><a class="reference internal" href="../index.html">Pep8</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Pep8</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Flake8</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../pep8/index.html">Pep8</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Pep8</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../pep8/flake8/index.html">Flake8</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../library/index.html">Library</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Library</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -180,9 +182,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../virtual_environment/index.html">Environnement virtuel</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../algorithme/index.html">Algorithme</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Algorithme</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithme/arithmetic_analysis/index.html">Analyse arithmetique</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Analyse arithmetique</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../algorithme/arithmetic_analysis/bissection.html">Bissection</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../index.html">Algorithme</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Algorithme</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="index.html">Analyse arithmetique</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Analyse arithmetique</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bissection.html">Bissection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="intersection.html">Intersection</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Lu decomposition</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +238,7 @@
         </a>
         <div class="content-icon-container">
           <div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/LaurentJouron/madoc/edit/blob/main/source/python/pep8/flake8/index.rst" title="Edit this page">
+  <a class="muted-link" href="https://github.com/LaurentJouron/madoc/edit/blob/main/source/python/algorithme/arithmetic_analysis/lu_decomposition.rst" title="Edit this page">
     <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -250,22 +254,89 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="flake8">
-<h1>Flake8<a class="headerlink" href="#flake8" title="Link to this heading">#</a></h1>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<a class="reference external image-reference" href="https://flake8.pycqa.org/"><img alt="Flake8 Badge" src="https://img.shields.io/badge/flake8-%234B8BBE.svg?style=for-the-badge&amp;logo=flake8&amp;logoColor=white" /></a>
-<a class="reference external image-reference" href="https://pypi.org/project/flake8-html/"><img alt="Flake8-HTML Badge" src="https://img.shields.io/badge/Flake8--HTML-%234B8BBE.svg?style=for-the-badge&amp;logo=flake8&amp;logoColor=white" /></a>
-<p>Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels.
-En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages
-<a class="reference external" href="https://flake8.pycqa.org/">Flake8</a> et <a class="reference external" href="https://pypi.org/project/flake8-html/">Flake8-HTML</a>.</p>
+          <section id="lu-decomposition">
+<span id="id1"></span><h1>Lu decomposition<a class="headerlink" href="#lu-decomposition" title="Link to this heading">#</a></h1>
+<p>La fonction lu_decompose réalise la décomposition LU d’une matrice carrée en une matrice triangulaire
+inférieure (L) et une matrice triangulaire supérieure (U) en utilisant la méthode de décomposition LU.
+Cette méthode est couramment utilisée en algèbre linéaire pour résoudre des systèmes d’équations linéaires
+et inverser des matrices.</p>
+<p>La fonction prend en paramètre une matrice carrée et retourne les matrices L et U. Elle itère sur les
+éléments de la matrice d’entrée pour calculer les éléments des matrices L et U en suivant un processus
+spécifique. Les résultats obtenus sont ensuite retournés sous forme de tuples contenant les matrices L et U.</p>
+<p>En utilisant cette fonction, les utilisateurs peuvent facilement décomposer une matrice carrée en ses
+composantes L et U, ce qui peut être utile dans de nombreuses applications en mathématiques, en science
+des données et en ingénierie.</p>
+<section id="fonction">
+<h2>Fonction<a class="headerlink" href="#fonction" title="Link to this heading">#</a></h2>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+
+<span class="k">def</span> <span class="nf">lu_decompose</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Decomposes a square matrix into its lower triangular matrix (L) and upper triangular matrix (U) using LU decomposition.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        matrix: The square matrix to be decomposed.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        L: The lower triangular matrix.</span>
+<span class="sd">        U: The upper triangular matrix.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rows</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    <span class="n">L</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="p">))</span>
+    <span class="n">U</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">rows</span> <span class="o">!=</span> <span class="n">columns</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">columns</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+            <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
+                <span class="nb">sum</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="nb">sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">U</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+
+        <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+            <span class="n">sum1</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+                <span class="n">sum1</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">U</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">sum1</span>
+
+    <span class="k">return</span> <span class="n">L</span><span class="p">,</span> <span class="n">U</span>
+
+<span class="n">matrix</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">L</span><span class="p">,</span> <span class="n">U</span> <span class="o">=</span> <span class="n">lu_decompose</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lower triangular matrix (L):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Upper triangular matrix (U):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+</pre></div>
 </div>
+</section>
+<section id="resultats">
+<h2>Resultats<a class="headerlink" href="#resultats" title="Link to this heading">#</a></h2>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">Lower</span> <span class="n">triangular</span> <span class="n">matrix</span> <span class="p">(</span><span class="n">L</span><span class="p">):</span>
+<span class="p">[[</span><span class="mf">1.</span>  <span class="mf">0.</span>  <span class="mf">0.</span> <span class="p">]</span>
+<span class="p">[</span><span class="mf">0.</span>  <span class="mf">1.</span>  <span class="mf">0.</span> <span class="p">]</span>
+<span class="p">[</span><span class="mf">2.5</span> <span class="mf">8.</span>  <span class="mf">1.</span> <span class="p">]]</span>
+
+<span class="n">Upper</span> <span class="n">triangular</span> <span class="n">matrix</span> <span class="p">(</span><span class="n">U</span><span class="p">):</span>
+<span class="p">[[</span>  <span class="mf">2.</span>   <span class="o">-</span><span class="mf">2.</span>    <span class="mf">1.</span> <span class="p">]</span>
+<span class="p">[</span>  <span class="mf">0.</span>    <span class="mf">1.</span>    <span class="mf">2.</span> <span class="p">]</span>
+<span class="p">[</span>  <span class="mf">0.</span>    <span class="mf">0.</span>  <span class="o">-</span><span class="mf">17.5</span><span class="p">]]</span>
+</pre></div>
+</div>
+</section>
 </section>
 
         </article>
@@ -273,23 +344,23 @@ En fonction des besoins, il faut se rendre sur la documentation officielle et ad
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../../library/index.html">
+          <a class="next-page" href="../../../django/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Library</div>
+                <div class="title">Django</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../index.html">
+          <a class="prev-page" href="intersection.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Pep8</div>
+                <div class="title">Intersection</div>
                 
               </div>
             </a>
@@ -311,8 +382,28 @@ En fonction des besoins, il faut se rendre sur la documentation officielle et ad
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Lu decomposition</a><ul>
+<li><a class="reference internal" href="#fonction">Fonction</a></li>
+<li><a class="reference internal" href="#resultats">Resultats</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
