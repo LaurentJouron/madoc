@@ -14,7 +14,7 @@
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 <meta name="theme-color" content="#3776ab">
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Django" href="../../../django/index.html" /><link rel="prev" title="Bissection" href="bissection.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Lu decomposition" href="lu_decomposition.html" /><link rel="prev" title="Bissection" href="bissection.html" />
 
     <link rel="shortcut icon" href="../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
         <title>Intersection - Documentation Madoc</title>
@@ -186,6 +186,8 @@
 <li class="toctree-l3 current has-children"><a class="reference internal" href="index.html">Analyse arithmetique</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Analyse arithmetique</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="bissection.html">Bissection</a></li>
 <li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Intersection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lu_decomposition.html">Lu decomposition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="newton_method.html">Newton method</a></li>
 </ul>
 </li>
 </ul>
@@ -205,13 +207,18 @@
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../github/index.html">Github</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Github</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../github/actions/index.html">Actions</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../github/initialisation/index.html">Initialisation</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Initialisation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../github/initialisation/compte.html">Creation d’un compte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../github/initialisation/repository.html">Repository</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../sentry/index.html">Sentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../circleci/index.html">Circleci</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../sphinx/index.html">Sphinx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../pytest/index.html">Pytest</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../docstrings/index.html">Docstrings</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Docstrings</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../docstrings/index.html">Docstrings</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Docstrings</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../docstrings/google.html">Google</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../docstrings/numpy_scipy.html">Numpy/Scipy</a></li>
 </ul>
@@ -237,7 +244,7 @@
         </a>
         <div class="content-icon-container">
           <div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/LaurentJouron/madoc/edit/blob/main/source/python/algorithme/arithmetic_analysis/intersection.rst" title="Edit this page">
+  <a class="muted-link" href="https://github.com/LaurentJouron/madoc/edit/main/source/python/algorithme/arithmetic_analysis/intersection.rst" title="Edit this page">
     <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -329,12 +336,12 @@ soit inférieure à un seuil de précision défini.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../../../django/index.html">
+          <a class="next-page" href="lu_decomposition.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Django</div>
+                <div class="title">Lu decomposition</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

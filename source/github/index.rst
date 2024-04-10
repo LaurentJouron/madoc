@@ -16,3 +16,4 @@ Github
    :maxdepth: 3
 
    actions/index
+   initialisation/index
