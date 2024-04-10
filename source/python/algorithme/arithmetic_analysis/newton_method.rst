@@ -58,9 +58,15 @@ Fonction
         """The derivative of f(x)."""
         return 3 * x ** 2 - 2
 
-    # Example usage:
+
+Utilisation
+-----------
+
+.. code-block:: Python
+
     root = newton_method(f, f1, 3)
-    print("Approximated root:", root)
+    print(f"Approximated root: {root}")
+
 
 Resultats
 ---------

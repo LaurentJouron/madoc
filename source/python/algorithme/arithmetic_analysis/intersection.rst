@@ -62,7 +62,14 @@ Fonction
         """
         return math.pow(x, 3) - (2 * x) - 5
 
+
+Utilisation
+-----------
+
+.. code-block:: Python
+
     print(intersection(f, 3, 3.5))
+
 
 Resultats
 ---------

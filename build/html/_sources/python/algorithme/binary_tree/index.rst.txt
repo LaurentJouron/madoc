@@ -1,0 +1,8 @@
+===============
+Arbres binaires
+===============
+
+.. toctree::
+   :maxdepth: 3
+
+   binary_tree

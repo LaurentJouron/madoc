@@ -66,6 +66,12 @@ Fonction
         """
         return math.pow(x, 3) - 2*x - 5
 
+
+Utilisation
+-----------
+
+.. code-block:: Python
+    
     print(bisection(f, 1, 1000))
 
 

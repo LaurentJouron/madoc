@@ -59,6 +59,12 @@ Fonction
 
         return L, U
 
+
+Utilisation
+-----------
+
+.. code-block:: Python
+
     matrix = numpy.array([[2, -2, 1],
                         [0, 1, 2],
                         [5, 3, 1]])
@@ -68,6 +74,7 @@ Fonction
     print(L)
     print("\nUpper triangular matrix (U):")
     print(U)
+
 
 Resultats
 ---------
