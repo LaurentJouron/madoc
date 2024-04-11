@@ -13,8 +13,8 @@ sys.path.append(os.path.abspath("tools/extensions"))
 sys.path.append(os.path.abspath("includes"))
 
 project = "Madoc"
-copyright = f'2024-{time.strftime("%Y")}, Jouron Laurent'
-author = "Jouron Laurent"
+copyright = f'2024-{time.strftime("%Y")}, Laurent Jouron'
+author = "Laurent Jouron"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

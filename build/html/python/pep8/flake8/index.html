@@ -7,12 +7,14 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://laurentjouron.github.io/python/pep8/flake8/index.html" />
 <meta property="og:site_name" content="Madoc" />
+<meta property="og:description" content="Flake8 est un outil d’analyse de code source statique en Python. Analyse statique: Flake8 effectue une analyse statique du code Python. Cela signifie qu’il l’analyse à la recherche d’erreurs, de pr..." />
 <meta property="og:image" content="https://laurentjouron.github.io/_static/ikigai-cercle.png" />
 <meta property="og:image:alt" content="Madoc" />
+<meta name="description" content="Flake8 est un outil d’analyse de code source statique en Python. Analyse statique: Flake8 effectue une analyse statique du code Python. Cela signifie qu’il l’analyse à la recherche d’erreurs, de pr..." />
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 <meta name="theme-color" content="#3776ab">
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Library" href="../../library/index.html" /><link rel="prev" title="Pep8" href="../index.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Initialisation" href="inistalisation.html" /><link rel="prev" title="Pep8" href="../index.html" />
 
     <link rel="shortcut icon" href="../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
         <title>Flake8 - Documentation Madoc</title>
@@ -146,7 +148,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -172,51 +174,56 @@
   <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../../index.html">Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Python</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 current has-children"><a class="reference internal" href="../index.html">Pep8</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Pep8</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Flake8</a></li>
+<li class="toctree-l3 current has-children current-page"><a class="current reference internal" href="#">Flake8</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Flake8</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="inistalisation.html">Initialisation</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../library/index.html">Library</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Library</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../library/index.html">Library</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Library</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../library/pandas/index.html">Pandas</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../virtual_environment/index.html">Environnement virtuel</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../algorithme/index.html">Algorithme</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Algorithme</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithme/arithmetic_analysis/index.html">Analyse arithmetique</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Analyse arithmetique</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../algorithme/index.html">Algorithme</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Algorithme</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../algorithme/arithmetic_analysis/index.html">Analyse arithmetique</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Analyse arithmetique</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithme/arithmetic_analysis/bissection.html">Bissection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithme/arithmetic_analysis/intersection.html">Intersection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithme/arithmetic_analysis/lu_decomposition.html">Lu decomposition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../algorithme/arithmetic_analysis/newton_method.html">Newton method</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../algorithme/binary_tree.html">Arbre binaire</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../django/index.html">Django</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Django</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../django/index.html">Django</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Django</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../django/drf/index.html">DRF</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../django/wagtail/index.html">Wagtail</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../docker/index.html">Docker</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Docker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../docker/index.html">Docker</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Docker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../docker/docker_compose/index.html">Docker-compose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../docker/dockerfile/index.html">Dockerfile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../docker/dockerhub/index.html">Dockerhub</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../github/index.html">Github</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Github</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../github/index.html">Github</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Github</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../github/actions/index.html">Actions</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../github/initialisation/index.html">Initialisation</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Initialisation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../github/initialisation/index.html">Initialisation</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Initialisation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../github/initialisation/compte.html">Creation d’un compte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../github/initialisation/repository.html">Repository</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../github/branch.html">Branches</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../sentry/index.html">Sentry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../circleci/index.html">Circleci</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../sphinx/index.html">Sphinx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../pytest/index.html">Pytest</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../docstrings/index.html">Docstrings</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Docstrings</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../docstrings/index.html">Docstrings</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of Docstrings</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../docstrings/google.html">Google</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../docstrings/numpy_scipy.html">Numpy/Scipy</a></li>
 </ul>
@@ -258,7 +265,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -274,6 +281,51 @@
 En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages
 <a class="reference external" href="https://flake8.pycqa.org/">Flake8</a> et <a class="reference external" href="https://pypi.org/project/flake8-html/">Flake8-HTML</a>.</p>
 </div>
+<p>Flake8 est un outil d’analyse de code source statique en Python.</p>
+<section id="analyse-statique">
+<h2>Analyse statique<a class="headerlink" href="#analyse-statique" title="Link to this heading">#</a></h2>
+<p>Flake8 effectue une analyse statique du code Python. Cela signifie qu’il l’analyse à la recherche d’erreurs, de pratiques non recommandées, sans l’exécuter.</p>
+</section>
+<section id="validation-de-style">
+<h2>Validation de style<a class="headerlink" href="#validation-de-style" title="Link to this heading">#</a></h2>
+<p>Flake8 vérifie si le code Python est conforme aux conventions de style définies dans les normes PEP8. Il signale les violations de
+style telles que l’indentation incorrecte, les lignes trop longues, les espaces inutiles, etc…</p>
+</section>
+<section id="detection-derreur">
+<h2>Détection d’erreur<a class="headerlink" href="#detection-derreur" title="Link to this heading">#</a></h2>
+<p>En plus de vérifier le style du code, Flake8 détecte également des erreurs potentielles dans le code, telles que des références
+à des variables non définies, des importations inutilisées, des boucles sans fin, etc…</p>
+</section>
+<section id="personnalisable">
+<h2>Personnalisable<a class="headerlink" href="#personnalisable" title="Link to this heading">#</a></h2>
+<p>Flake8 est personnalisable. Vous pouvez configurer les règles de style que vous souhaitez appliquer, désactiver certaines
+vérifications ou en ajouter de nouvelles selon vos besoins spécifiques.</p>
+</section>
+<section id="integration-dans-lecosysteme-python">
+<h2>Intégration dans l’écosystème Python<a class="headerlink" href="#integration-dans-lecosysteme-python" title="Link to this heading">#</a></h2>
+<p>Flake8 est largement utilisé dans l’écosystème Python et est pris en charge par de nombreux éditeurs de code, IDE et
+systèmes de contrôle de version. Il peut être facilement intégré dans un workflow de développement Python pour améliorer
+la qualité et la cohérence de votre code.</p>
+<p>En résumé, Flake8 est un outil puissant pour assurer la qualité et la cohérence du code Python en détectant les erreurs,
+en vérifiant la conformité avec les conventions de style et en fournissant une analyse statique du code source. L’utilisation de
+Flake8 peut aider à maintenir un code propre, lisible et facilement maintenable dans les projets Python.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="inistalisation.html">Initialisation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#flake8">.flake8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#utilisation-de-flake8">Utilisation de flake8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#creer-un-rapport-flake8">Créer un rapport flake8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#extension-flake8">Extension Flake8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#rapports-detailles">Rapports détaillés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#visualisation-conviviale">Visualisation conviviale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#personnalisable">Personnalisable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#integration-dans-les-flux-de-travail">Intégration dans les flux de travail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inistalisation.html#workflows">Workflows</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
 </section>
 
         </article>
@@ -281,12 +333,12 @@ En fonction des besoins, il faut se rendre sur la documentation officielle et ad
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../../library/index.html">
+          <a class="next-page" href="inistalisation.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Library</div>
+                <div class="title">Initialisation</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -305,7 +357,7 @@ En fonction des besoins, il faut se rendre sur la documentation officielle et ad
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2024-2024, Jouron Laurent
+                Copyright &#169; 2024-2024, Laurent Jouron
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
@@ -319,8 +371,31 @@ En fonction des besoins, il faut se rendre sur la documentation officielle et ad
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Flake8</a><ul>
+<li><a class="reference internal" href="#analyse-statique">Analyse statique</a></li>
+<li><a class="reference internal" href="#validation-de-style">Validation de style</a></li>
+<li><a class="reference internal" href="#detection-derreur">Détection d’erreur</a></li>
+<li><a class="reference internal" href="#personnalisable">Personnalisable</a></li>
+<li><a class="reference internal" href="#integration-dans-lecosysteme-python">Intégration dans l’écosystème Python</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

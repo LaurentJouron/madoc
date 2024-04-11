@@ -1,5 +1,5 @@
 ====================
-Analyse arithmetique
+Analyse arithmétique
 ====================
 
 .. toctree::
