@@ -12,7 +12,6 @@ Python
     En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
     `Python <https://docs.python.org/3/>`_.
 
-6. Once you fixed the issue, run the tests, and the patchcheck:
 
    .. tab:: Unix
 
@@ -31,6 +30,7 @@ Python
       .. code-block:: dosbatch
 
          .\python.bat Tools\patchcheck\patchcheck.py
+
 
 .. toctree::
    :maxdepth: 3

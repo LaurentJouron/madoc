@@ -9,25 +9,25 @@ Création d'un repository
 
 Il faut se déplacer dans le dossier où l'on veux placer le projet.
 
-.. code-block:: console
+.. code-block:: shell
 
     cd C:\Users\l.jouron\VisualStudioCode
 
 Créer un dossier au nom du projet.
 
-.. code-block:: console
+.. code-block:: shell
 
     mkdir projet
 
 Se placer dans le dossier.
 
-.. code-block:: console
+.. code-block:: shell
 
     cd projet
 
 Initialiser le projet avec ses paramètrages.
 
-.. code-block:: console
+.. code-block:: shell
 
     git init
 
@@ -40,7 +40,7 @@ Accéder à un depot distant
 
 Comment accéder à un dépôt distant et le cloner en local. Il faut récupérer l’URL du dépôt sur GitHub.
 
-.. code-block:: console
+.. code-block:: shell
 
     git remote add LOCAL https://github.com/LaurentJouron/madoc
 
@@ -48,7 +48,7 @@ Comment accéder à un dépôt distant et le cloner en local. Il faut récupére
 Cloner à un depot distant
 -------------------------
 
-.. code-block:: console
+.. code-block:: shell
 
     git clone https://github.com/LaurentJouron/madoc
 
@@ -58,22 +58,22 @@ Faire un commit
 
 Avant de faire un commit il faut ajouter les fichiers nécéssaires aux modifications.
 
-.. code-block:: console
+.. code-block:: shell
 
     git add requirements.txt
 
 Pour ajouter tous les fichiers en une seule commande:
 
-.. code-block:: console
+.. code-block:: shell
 
     git add .
 
 Faire le commit:
 
-.. code-block:: console
+.. code-block:: shell
 
     git commit -m “First commit”
 
-.. code-block:: console
+.. code-block:: shell
 
     git push -u origin main

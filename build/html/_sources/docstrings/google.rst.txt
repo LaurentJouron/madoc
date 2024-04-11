@@ -17,18 +17,18 @@ Rien n'empêche d'écrire les docs en français, mais il est préférable de les
 
 .. code-block:: Python
 
-        def addition(a, b):
-            """
-            This function takes two numbers as input and returns their sum.
+    def addition(a, b):
+        """
+        This function takes two numbers as input and returns their sum.
 
-            Args:
-                a (int): The first number.
-                b (int): The second number.
+        Args:
+            a (int): The first number.
+            b (int): The second number.
 
-            Returns:
-                int: The sum of the two numbers.
-            """
-            return a + b
+        Returns:
+            int: The sum of the two numbers.
+        """
+        return a + b
 
 
 Affiche les docstrings
@@ -38,18 +38,18 @@ Pour affcicher la docstring d’une fonction, classe ou méthode, il est suffit 
 
 .. code-block:: Python
 
-        print(addition.__doc__)
+    print(addition.__doc__)
 
 Resultats
 ---------
 
 .. code-block:: Python
 
-        This function takes two numbers as input and returns their sum.
+    This function takes two numbers as input and returns their sum.
 
-        Args:
-            a (int): The first number.
-            b (int): The second number.
+    Args:
+        a (int): The first number.
+        b (int): The second number.
 
-        Returns:
-            int: The sum of the two numbers.
+    Returns:
+        int: The sum of the two numbers.

@@ -28,7 +28,7 @@ logiciel.
 Lister les Branches
 -------------------
 
-.. code-block:: console
+.. code-block:: shell
 
     git branch
 
@@ -36,26 +36,28 @@ Lister les Branches
 Si le projet vient juste d'être créer, il n'y aura qu'une seule branche. L’étoile indique que c’est la branche 
 sur laquelle on se trouve.
 
-.. code-block:: console
+.. code-block:: shell
 
     ""resultats""
+
     * main
 
 
 Création d'une branche
 ----------------------
 
-.. code-block:: console
+.. code-block:: shell
 
     git branch <branch name>
 
-.. code-block:: console
+.. code-block:: shell
 
     git branch
 
-.. code-block:: console
+.. code-block:: shell
 
     ""resultats""
+
     * main
     <branch name>
 
@@ -63,22 +65,23 @@ Création d'une branche
 Changer de branches
 -------------------
 
-.. code-block:: console
+.. code-block:: shell
 
     git checkout <branch name>
 
-.. code-block:: console
+.. code-block:: shell
 
     git branch
 
-.. code-block:: console
+.. code-block:: shell
 
     ""resultats""
+
     main
     * <branch name>
 
 Créer une branche et se positionner dessus directement
 
-.. code-block:: console
+.. code-block:: shell
     
     git checkout -b <branch name>
