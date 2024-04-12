@@ -182,6 +182,7 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../python/library/index.html">Library</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Library</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../python/library/pandas/index.html">Pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/library/fake/index.html">Fake</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../python/virtual_environment/index.html">Environnement virtuel</a></li>
@@ -338,6 +339,125 @@ main
 </pre></div>
 </div>
 </section>
+<section id="l-index-le-depot-local-et-le-sha">
+<h2>L’Index, le Dépôt Local et le SHA<a class="headerlink" href="#l-index-le-depot-local-et-le-sha" title="Link to this heading">#</a></h2>
+<p>L’index, également appelé stage, désigne l’ensemble des fichiers modifiés que vous souhaitez inclure dans votre prochain commit.
+Vous utilisez la commande <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> pour ajouter un fichier à l’index.</p>
+<p>Le dépôt local représente l’historique de toutes vos actions dans le projet, y compris les commits, les configurations, etc…
+L’archivage des modifications se fait principalement à l’aide de la commande <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>. Vous pouvez accéder à cet historique
+en utilisant la commande <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reflog</span></code>, qui affiche toutes vos actions passées avec leurs identifiants SHA.
+Le SHA (Secure Hash Algorithm) est un code unique qui identifie de manière spécifique chaque commit.
+Il vous permet de revenir à un commit exact à tout moment.</p>
+<p>En résumé, l’index vous permet de préparer vos modifications pour le prochain commit, le dépôt local stocke l’historique complet de
+vos actions et le SHA est un identifiant unique pour chaque commit, permettant un contrôle précis de l’historique du projet.</p>
+</section>
+<section id="suppression-d-une-branche">
+<h2>Suppression d’une Branche<a class="headerlink" href="#suppression-d-une-branche" title="Link to this heading">#</a></h2>
+<p>Il peut arriver que nous souhaitions ajouter nos fichiers avant de créer la branche, ce qui peut entraîner une erreur.
+Dans ce cas, nous pouvons supprimer la branche nouvellement créée en utilisant la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>NomDeLaBranche
+</pre></div>
+</div>
+<p>Cela supprime la branche spécifiée, nous permettant de préparer nos fichiers avant de créer une nouvelle branche. Si des
+modifications ont déjà été apportées dans la branche que nous souhaitons supprimer, nous devrons soit faire un commit de ces
+modifications, soit les mettre de côté. Sinon, nous pouvons forcer la suppression de la branche en utilisant la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span>NomDeLaBranche
+</pre></div>
+</div>
+<p>Cela supprimera la branche même si des modifications y ont été apportées, mais cela peut entraîner la perte de données non
+sauvegardées. Veillez donc à utiliser cette commande avec prudence.</p>
+<p>En suivant ces étapes, nous pouvons créer et supprimer des branches dans Git de manière efficace, en nous assurant que
+notre travail est organisé et sécurisé.</p>
+</section>
+<section id="remise-et-recuperation-des-modifications">
+<h2>Remise et récupération des modifications<a class="headerlink" href="#remise-et-recuperation-des-modifications" title="Link to this heading">#</a></h2>
+<p>Lorsque vous modifiez votre branche main par erreur avant de créer une nouvelle branche, vous pouvez utiliser la fonction
+la remise pour mettre vos modifications de côté. Voici comment procéder :</p>
+<p>Utilisation de la Remise (Stash)</p>
+<p>Tout d’abord, assurez-vous que votre branche main est propre en exécutant la commande suivante :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>stash
+</pre></div>
+</div>
+<p>Cela mettra de côté vos modifications en cours, laissant votre branche main propre pour créer une nouvelle branche.</p>
+</section>
+<section id="creation-d-une-nouvelle-branche">
+<h2>Création d’une Nouvelle Branche<a class="headerlink" href="#creation-d-une-nouvelle-branche" title="Link to this heading">#</a></h2>
+<p>Maintenant que votre branche main est propre, vous pouvez créer une nouvelle branche avec la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>NouvelleBranche
+</pre></div>
+</div>
+</section>
+<section id="basculer-sur-la-nouvelle-branche">
+<h2>Basculer sur la Nouvelle Branche<a class="headerlink" href="#basculer-sur-la-nouvelle-branche" title="Link to this heading">#</a></h2>
+<p>Basculez sur la nouvelle branche que vous venez de créer en utilisant la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>NouvelleBranche
+</pre></div>
+</div>
+</section>
+<section id="appliquer-la-remise">
+<h2>Appliquer la Remise<a class="headerlink" href="#appliquer-la-remise" title="Link to this heading">#</a></h2>
+<p>Enfin, appliquez la remise pour récupérer vos modifications sur la nouvelle branche avec la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>stash<span class="w"> </span>apply
+</pre></div>
+</div>
+<p>Gérer les Remises Multiples (Optionnel)</p>
+<p>Si vous avez plusieurs remises et que vous souhaitez appliquer une remise spécifique, vous pouvez lister les remises avec la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>stash<span class="w"> </span>list
+</pre></div>
+</div>
+<p>Ensuite, appliquez la remise souhaitée en utilisant son identifiant :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>stash<span class="w"> </span>apply<span class="w"> </span>stash@<span class="o">{</span>Identifiant<span class="o">}</span>
+</pre></div>
+</div>
+<p>Vérifiez que vos modifications ont bien été appliquées en utilisant :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>status
+</pre></div>
+</div>
+<p>Si tout semble correct, vous pouvez maintenant effectuer un commit sur votre nouvelle branche avec vos modifications.</p>
+</section>
+<section id="annuler-le-dernier-commit">
+<h2>Annuler le dernier commit<a class="headerlink" href="#annuler-le-dernier-commit" title="Link to this heading">#</a></h2>
+<p>Maintenant, nous allons devoir récupérer l’identifiant du commit que nous venons de réaliser. Utilisez la commande
+suivante pour afficher l’historique des commits et trouvez l’identifiant du commit que vous venez de réaliser :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>log
+</pre></div>
+</div>
+<p>Une fois que vous avez l’identifiant du commit (le hash), gardez-le de côté. Ensuite, assurez-vous que vous
+êtes sur votre branche main en exécutant la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>main
+</pre></div>
+</div>
+<p>Maintenant, nous allons annuler le dernier commit sur la branche master avec la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD^
+</pre></div>
+</div>
+<p>Après avoir annulé le dernier commit, vous pouvez créer votre nouvelle branche avec la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>nouvelle_branche
+</pre></div>
+</div>
+<p>Basculez sur cette nouvelle branche avec la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>nouvelle_branche
+</pre></div>
+</div>
+<p>Enfin, appliquez les modifications du commit précédent sur votre nouvelle branche avec la commande :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>cherry-pick<span class="w"> </span>identifiant_du_commit
+</pre></div>
+</div>
+<p>Lorsque l’on travaille sur un projet avec Git, il est très important, lorsque l’on propage les modifications,
+de bien marquer dans le message descriptif les modifications que l’on a effectuées.
+Si jamais vous faites une erreur dans l’un de vos messages de commit, il est tout à fait possible de changer
+le message après coup.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Cette commande va fonctionner pour le dernier commit réalisé !</p>
+</div>
+<p>Imaginons que vous veniez de faire un commit et que vous ayez fait une erreur dans votre message.
+L’exécution de cette commande, lorsqu’aucun élément n’est encore modifié, vous permet de modifier
+le message du commit précédent sans modifier son instantané. L’option -m permet de transmettre le nouveau message.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>--amend<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Votre nouveau message de commit&quot;</span>
+</pre></div>
+</div>
+</section>
 </section>
 
         </article>
@@ -399,6 +519,13 @@ main
 <li><a class="reference internal" href="#lister-les-branches">Lister les Branches</a></li>
 <li><a class="reference internal" href="#creation-d-une-branche">Création d’une branche</a></li>
 <li><a class="reference internal" href="#changer-de-branches">Changer de branches</a></li>
+<li><a class="reference internal" href="#l-index-le-depot-local-et-le-sha">L’Index, le Dépôt Local et le SHA</a></li>
+<li><a class="reference internal" href="#suppression-d-une-branche">Suppression d’une Branche</a></li>
+<li><a class="reference internal" href="#remise-et-recuperation-des-modifications">Remise et récupération des modifications</a></li>
+<li><a class="reference internal" href="#creation-d-une-nouvelle-branche">Création d’une Nouvelle Branche</a></li>
+<li><a class="reference internal" href="#basculer-sur-la-nouvelle-branche">Basculer sur la Nouvelle Branche</a></li>
+<li><a class="reference internal" href="#appliquer-la-remise">Appliquer la Remise</a></li>
+<li><a class="reference internal" href="#annuler-le-dernier-commit">Annuler le dernier commit</a></li>
 </ul>
 </li>
 </ul>

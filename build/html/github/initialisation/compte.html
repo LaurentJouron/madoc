@@ -7,10 +7,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://laurentjouron.github.io/github/initialisation/compte.html" />
 <meta property="og:site_name" content="Madoc" />
-<meta property="og:description" content="Avant de commencer il faut créer un compte github. Installer git sur son ordinateur: Rendez-vous sur la page de git. Ensuite il faut télécharger les fichiers d’installation. L’installation est la m..." />
+<meta property="og:description" content="Avant de commencer il faut créer un compte github. Installation de Git sur votre ordinateur: Rendez-vous sur la page de téléchargement de Git et téléchargez les fichiers d’installation compatibles ..." />
 <meta property="og:image" content="https://laurentjouron.github.io/_static/ikigai-cercle.png" />
 <meta property="og:image:alt" content="Madoc" />
-<meta name="description" content="Avant de commencer il faut créer un compte github. Installer git sur son ordinateur: Rendez-vous sur la page de git. Ensuite il faut télécharger les fichiers d’installation. L’installation est la m..." />
+<meta name="description" content="Avant de commencer il faut créer un compte github. Installation de Git sur votre ordinateur: Rendez-vous sur la page de téléchargement de Git et téléchargez les fichiers d’installation compatibles ..." />
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 <meta name="theme-color" content="#3776ab">
@@ -182,6 +182,7 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../python/library/index.html">Library</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Library</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../python/library/pandas/index.html">Pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/library/fake/index.html">Fake</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../python/virtual_environment/index.html">Environnement virtuel</a></li>
@@ -277,25 +278,25 @@
           <section id="creation-d-un-compte">
 <span id="compte"></span><h1>Creation d’un compte<a class="headerlink" href="#creation-d-un-compte" title="Link to this heading">#</a></h1>
 <p>Avant de commencer il faut créer un compte <a class="reference external" href="https://github.com/">github</a>.</p>
-<section id="installer-git-sur-son-ordinateur">
-<h2>Installer git sur son ordinateur<a class="headerlink" href="#installer-git-sur-son-ordinateur" title="Link to this heading">#</a></h2>
-<p>Rendez-vous sur la page de <a class="reference external" href="https://git-scm.com/downloads">git</a>. Ensuite il faut télécharger les fichiers d’installation.
-L’installation est la même sur tous les OS, mais il faut télécharger la version compatible avec le système.
-Lancer l’executable et cliquer sur suivant, sauf à la dernière fenêtre où il faut cocher <strong>launch Git Bash</strong>.</p>
+<section id="installation-de-git-sur-votre-ordinateur">
+<h2>Installation de Git sur votre ordinateur<a class="headerlink" href="#installation-de-git-sur-votre-ordinateur" title="Link to this heading">#</a></h2>
+<p>Rendez-vous sur la page de téléchargement de <a class="reference external" href="https://git-scm.com/downloads">Git</a> et téléchargez les fichiers d’installation compatibles
+avec votre système d’exploitation. L’installation est similaire sur tous les systèmes d’exploitation, mais assurez-vous de télécharger
+la version compatible avec votre OS. Une fois téléchargé, exécutez le fichier d’installation et suivez les instructions à l’écran.
+Assurez-vous de cocher l’option launch Git Bash à la dernière étape de l’installation.</p>
 </section>
-<section id="initialisation">
-<h2>Initialisation<a class="headerlink" href="#initialisation" title="Link to this heading">#</a></h2>
-<p>La première chose à faire est d’initialiser son compte. Pour ça il faut saisir les lignes de commandes. Cet exemple montre l’initialisation
-de <strong>mon</strong> compte.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.username<span class="w"> </span><span class="s2">&quot;Laurent Jouron&quot;</span>
+<section id="initialisation-de-git">
+<h2>Initialisation de Git<a class="headerlink" href="#initialisation-de-git" title="Link to this heading">#</a></h2>
+<p>La première étape consiste à configurer votre compte Git. Utilisez les commandes suivantes en remplaçant les valeurs entre guillemets par
+vos propres informations :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.username<span class="w"> </span><span class="s2">&quot;VotreNomUtilisateur&quot;</span>
 </pre></div>
 </div>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;jouronlaurent@hotmail.com&quot;</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;votre@email.com&quot;</span>
 </pre></div>
 </div>
-<p>Pour un projet spécifique, changer le nom d’utilisateur,Il faut repasser cette ligne mais sans le –global.</p>
-<p>Pour vérifier que les paramètres aient bien été pris en compte, et vérifier les autres paramètres,
-il suffit de passer la commande</p>
+<p>Si vous souhaitez configurer ces paramètres uniquement pour un projet spécifique, exécutez les mêmes commandes sans l’option –global.</p>
+<p>Pour vérifier que les paramètres ont été correctement pris en compte et voir d’autres paramètres configurés, utilisez la commande :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--list
 </pre></div>
 </div>
@@ -321,7 +322,11 @@ filter.lfs.process<span class="o">=</span>git-lfs<span class="w"> </span>filter-
 filter.lfs.required<span class="o">=</span><span class="nb">true</span>
 </pre></div>
 </div>
-<p>Je recommande d’activer les couleurs pour améliorer la lisibilité des branches. Passez ces trois lignes dans Git Bash:</p>
+</section>
+<section id="configuration-avancee-de-git">
+<h2>Configuration avancée de Git<a class="headerlink" href="#configuration-avancee-de-git" title="Link to this heading">#</a></h2>
+<p>Il est recommandé d’activer les couleurs pour améliorer la lisibilité des informations affichées par Git.
+Exécutez les commandes suivantes dans Git Bash :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>color.diff<span class="w"> </span>auto
 </pre></div>
 </div>
@@ -331,21 +336,19 @@ filter.lfs.required<span class="o">=</span><span class="nb">true</span>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>color.branch<span class="w"> </span>auto
 </pre></div>
 </div>
-<p>Par défaut, Git utilise Vim comme éditeur et Vimdiff comme outil de merge. Pour les modifier utilise:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>notepad++
+<p>Par défaut, Git utilise Vim comme éditeur et Vimdiff comme outil de merge. Si vous préférez utiliser un autre
+éditeur ou outil de merge, vous pouvez le configurer en utilisant les commandes suivantes :</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>NomDeVotreEditeur
 </pre></div>
 </div>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>merge.tool<span class="w"> </span>vimdiff
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>merge.tool<span class="w"> </span>NomDeVotreOutilDeMerge
 </pre></div>
 </div>
-<p>Il y a un changement qui n’a aucun impact mais qui fait beaucoup parler, c’est le nom de la branche principal. Pour passer de master à main
-il faut utiliser cette commande.
-Ce n’est clairement pas obligatoire. Votre branche principale peut avoir le nom que l’on souhaite. Cela dépend surtout des convictions de chacun.
-Je vous recommande de la faire car cela permet d’avoir un nom qui correspond à la norme et cela ça permet d’échanger simplement
-avec d’autres développeurs.</p>
+<p>Il est également possible de modifier le nom de la branche principale de votre dépôt Git de « master » à « main » en utilisant la commande suivante :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span>main
 </pre></div>
 </div>
+<p>Cette modification n’est pas obligatoire, mais elle est recommandée pour des raisons de standardisation et de compatibilité avec d’autres dépôts.</p>
 </section>
 </section>
 
@@ -405,8 +408,9 @@ avec d’autres développeurs.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Creation d’un compte</a><ul>
-<li><a class="reference internal" href="#installer-git-sur-son-ordinateur">Installer git sur son ordinateur</a></li>
-<li><a class="reference internal" href="#initialisation">Initialisation</a></li>
+<li><a class="reference internal" href="#installation-de-git-sur-votre-ordinateur">Installation de Git sur votre ordinateur</a></li>
+<li><a class="reference internal" href="#initialisation-de-git">Initialisation de Git</a></li>
+<li><a class="reference internal" href="#configuration-avancee-de-git">Configuration avancée de Git</a></li>
 </ul>
 </li>
 </ul>

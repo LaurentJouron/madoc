@@ -6,31 +6,33 @@ Creation d'un compte
 
 Avant de commencer il faut créer un compte `github <https://github.com/>`_.
 
-Installer git sur son ordinateur
---------------------------------
+Installation de Git sur votre ordinateur
+----------------------------------------
 
-Rendez-vous sur la page de `git <https://git-scm.com/downloads>`_. Ensuite il faut télécharger les fichiers d'installation. 
-L'installation est la même sur tous les OS, mais il faut télécharger la version compatible avec le système.
-Lancer l'executable et cliquer sur suivant, sauf à la dernière fenêtre où il faut cocher **launch Git Bash**.
+Rendez-vous sur la page de téléchargement de `Git <https://git-scm.com/downloads>`_ et téléchargez les fichiers d'installation compatibles 
+avec votre système d'exploitation. L'installation est similaire sur tous les systèmes d'exploitation, mais assurez-vous de télécharger 
+la version compatible avec votre OS. Une fois téléchargé, exécutez le fichier d'installation et suivez les instructions à l'écran. 
+Assurez-vous de cocher l'option launch Git Bash à la dernière étape de l'installation.
 
-Initialisation
---------------
 
-La première chose à faire est d'initialiser son compte. Pour ça il faut saisir les lignes de commandes. Cet exemple montre l'initialisation 
-de **mon** compte.
+Initialisation de Git
+---------------------
 
-.. code-block:: shell
-
-    git config --global user.username "Laurent Jouron"
+La première étape consiste à configurer votre compte Git. Utilisez les commandes suivantes en remplaçant les valeurs entre guillemets par 
+vos propres informations :
 
 .. code-block:: shell
 
-    git config --global user.email "jouronlaurent@hotmail.com"
+    git config --global user.username "VotreNomUtilisateur"
 
-Pour un projet spécifique, changer le nom d’utilisateur,Il faut repasser cette ligne mais sans le --global.
+.. code-block:: shell
 
-Pour vérifier que les paramètres aient bien été pris en compte, et vérifier les autres paramètres, 
-il suffit de passer la commande 
+    git config --global user.email "votre@email.com"
+
+
+Si vous souhaitez configurer ces paramètres uniquement pour un projet spécifique, exécutez les mêmes commandes sans l'option --global.
+
+Pour vérifier que les paramètres ont été correctement pris en compte et voir d'autres paramètres configurés, utilisez la commande :
 
 .. code-block:: shell
     
@@ -59,7 +61,12 @@ il suffit de passer la commande
     filter.lfs.process=git-lfs filter-process
     filter.lfs.required=true
 
-Je recommande d’activer les couleurs pour améliorer la lisibilité des branches. Passez ces trois lignes dans Git Bash:
+
+Configuration avancée de Git
+----------------------------
+
+Il est recommandé d'activer les couleurs pour améliorer la lisibilité des informations affichées par Git. 
+Exécutez les commandes suivantes dans Git Bash :
 
 .. code-block:: shell
 
@@ -74,22 +81,22 @@ Je recommande d’activer les couleurs pour améliorer la lisibilité des branch
 
     git config --global color.branch auto
 
-Par défaut, Git utilise Vim comme éditeur et Vimdiff comme outil de merge. Pour les modifier utilise:
+
+Par défaut, Git utilise Vim comme éditeur et Vimdiff comme outil de merge. Si vous préférez utiliser un autre 
+éditeur ou outil de merge, vous pouvez le configurer en utilisant les commandes suivantes :
 
 .. code-block:: shell
 
-    git config --global core.editor notepad++
+    git config --global core.editor NomDeVotreEditeur
 
 .. code-block:: shell
 
-    git config --global merge.tool vimdiff
+    git config --global merge.tool NomDeVotreOutilDeMerge
 
-Il y a un changement qui n'a aucun impact mais qui fait beaucoup parler, c'est le nom de la branche principal. Pour passer de master à main 
-il faut utiliser cette commande.
-Ce n’est clairement pas obligatoire. Votre branche principale peut avoir le nom que l'on souhaite. Cela dépend surtout des convictions de chacun.
-Je vous recommande de la faire car cela permet d’avoir un nom qui correspond à la norme et cela ça permet d'échanger simplement 
-avec d’autres développeurs.
+Il est également possible de modifier le nom de la branche principale de votre dépôt Git de "master" à "main" en utilisant la commande suivante :
 
 .. code-block:: shell
 
     git config --global init.defaultBranch main
+
+Cette modification n'est pas obligatoire, mais elle est recommandée pour des raisons de standardisation et de compatibilité avec d'autres dépôts.

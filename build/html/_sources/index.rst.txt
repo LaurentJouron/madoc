@@ -172,6 +172,10 @@ Library
    :alt: Pandas Badge
    :target: https://pandas.pydata.org/docs/
 
+.. image:: https://img.shields.io/badge/Fake-%23646464.svg?style=for-the-badge
+   :alt: Pandas Badge
+   :target: https://pandas.pydata.org/docs/
+
 
 Convention
 ----------
