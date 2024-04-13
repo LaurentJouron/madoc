@@ -23,7 +23,7 @@ Ensemble, nous pouvons améliorer cette documentation et en faire une ressource 
 Information
 -----------
 
-* **Authors** : `Laurent Jouron <https://laurentjouron.github.io/LaurentJouron.com/>`_
+* **Authors** : `Laurent Jouron <https://laurentjouron.github.io/>`_
 
 * **Etablissement**: Ikigai
 

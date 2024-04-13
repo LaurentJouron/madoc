@@ -1,7 +1,7 @@
 .. _compte :
 
 ====================
-Creation d'un compte
+Création d'un compte
 ====================
 
 Avant de commencer il faut créer un compte `github <https://github.com/>`_.
@@ -15,8 +15,8 @@ la version compatible avec votre OS. Une fois téléchargé, exécutez le fichie
 Assurez-vous de cocher l'option launch Git Bash à la dernière étape de l'installation.
 
 
-Initialisation de Git
----------------------
+Initialisation
+--------------
 
 La première étape consiste à configurer votre compte Git. Utilisez les commandes suivantes en remplaçant les valeurs entre guillemets par 
 vos propres informations :
@@ -62,8 +62,8 @@ Pour vérifier que les paramètres ont été correctement pris en compte et voir
     filter.lfs.required=true
 
 
-Configuration avancée de Git
-----------------------------
+Configuration avancée
+---------------------
 
 Il est recommandé d'activer les couleurs pour améliorer la lisibilité des informations affichées par Git. 
 Exécutez les commandes suivantes dans Git Bash :
