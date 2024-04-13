@@ -45,12 +45,20 @@
     body[data-theme="dark"] {
       --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #3c65af;
+  --color-brand-content: #3c65af;
+  --font-stack: Verdana, Arial, sans-serif;
+  --font-stack--monospace: Courier, monospace;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
         --color-code-background: #272822;
   --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #3c65af;
+  --color-brand-content: #3c65af;
+  --font-stack: Verdana, Arial, sans-serif;
+  --font-stack--monospace: Courier, monospace;
   
       }
     }
@@ -291,7 +299,7 @@ Ensemble, nous pouvons améliorer cette documentation et en faire une ressource 
 <li><p><strong>Etablissement</strong>: Ikigai</p></li>
 <li><p><strong>Projet</strong> : Madoc</p></li>
 <li><p><strong>Creation date</strong> : avr. 09, 2024</p></li>
-<li><p><strong>Modification date</strong> : avr. 12, 2024</p></li>
+<li><p><strong>Modification date</strong> : avr. 13, 2024</p></li>
 <li><p><strong>Status du document</strong> : En developpement</p></li>
 </ul>
 </section>
@@ -370,7 +378,17 @@ Ensemble, nous pouvons améliorer cette documentation et en faire une ressource 
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="python/index.html">Python</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="python/pep8/index.html">Pep8</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="python/pep8/flake8/index.html">Flake8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python/pep8/flake8/index.html">Flake8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="python/pep8/flake8/index.html#analyse-statique">Analyse statique</a></li>
+<li class="toctree-l4"><a class="reference internal" href="python/pep8/flake8/index.html#validation-de-style">Validation de style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="python/pep8/flake8/index.html#detection-derreur">Détection d’erreur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="python/pep8/flake8/index.html#personnalisable">Personnalisable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="python/pep8/flake8/index.html#integration-dans-lecosysteme-python">Intégration dans l’écosystème Python</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="python/pep8/flake8/inistalisation.html">Initialisation</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="python/library/index.html">Library</a><ul>
@@ -380,7 +398,22 @@ Ensemble, nous pouvons améliorer cette documentation et en faire une ressource 
 </li>
 <li class="toctree-l2"><a class="reference internal" href="python/virtual_environment/index.html">Environnement virtuel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="python/algorithme/index.html">Algorithme</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="python/algorithme/expert/index.html">Expert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python/algorithme/expert/index.html">Expert</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="python/algorithme/expert/arithmetic_analysis/index.html">Analyse arithmétique</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="python/algorithme/expert/arithmetic_analysis/bissection.html">Bissection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="python/algorithme/expert/arithmetic_analysis/intersection.html">Intersection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="python/algorithme/expert/arithmetic_analysis/lu_decomposition.html">Lu decomposition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="python/algorithme/expert/arithmetic_analysis/newton_method.html">Newton method</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="python/algorithme/expert/binary_tree.html">Arbre binaire</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="python/algorithme/expert/binary_tree.html#fonction">Fonction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="python/algorithme/expert/binary_tree.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="python/algorithme/expert/binary_tree.html#resultats">Resultats</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -400,8 +433,19 @@ Ensemble, nous pouvons améliorer cette documentation et en faire une ressource 
 <li class="toctree-l1"><a class="reference internal" href="github/index.html">Github</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="github/actions/index.html">Actions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="github/initialisation/index.html">Initialisation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="github/initialisation/compte.html">Création d’un compte</a></li>
-<li class="toctree-l3"><a class="reference internal" href="github/initialisation/repository.html">Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/initialisation/compte.html">Création d’un compte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="github/initialisation/compte.html#installation-de-git-sur-votre-ordinateur">Installation de Git sur votre ordinateur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="github/initialisation/compte.html#initialisation">Initialisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="github/initialisation/compte.html#configuration-avancee">Configuration avancée</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="github/initialisation/repository.html">Repository</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="github/initialisation/repository.html#guide-de-demarrage-rapide-avec-git-et-vscode">Guide de démarrage rapide avec Git et VSCode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="github/initialisation/repository.html#acceder-a-un-depot-distant">Accéder à un depot distant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="github/initialisation/repository.html#clonage-d-un-depot-distant">Clonage d’un depot distant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="github/initialisation/repository.html#faire-un-commit">Faire un commit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="github/branch.html">Branches</a><ul>
@@ -425,8 +469,18 @@ Ensemble, nous pouvons améliorer cette documentation et en faire une ressource 
 <li class="toctree-l1"><a class="reference internal" href="pytest/index.html">Pytest</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docstrings/index.html">Docstrings</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="docstrings/index.html#qu-est-ce-que-les-docstrings">Qu’est ce que les docstrings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docstrings/google.html">Google</a></li>
-<li class="toctree-l3"><a class="reference internal" href="docstrings/numpy_scipy.html">Numpy/Scipy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docstrings/google.html">Google</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docstrings/google.html#style-google">Style Google</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docstrings/google.html#affiche-les-docstrings">Affiche les docstrings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docstrings/google.html#resultats">Resultats</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docstrings/numpy_scipy.html">Numpy/Scipy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docstrings/numpy_scipy.html#style-numpy-scipy">Style NumPy/Scipy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docstrings/numpy_scipy.html#affiche-les-docstrings">Affiche les docstrings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docstrings/numpy_scipy.html#resultats">Resultats</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

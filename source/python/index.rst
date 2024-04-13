@@ -33,7 +33,7 @@ Python
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    pep8/index
    library/index

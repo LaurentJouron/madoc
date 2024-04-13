@@ -1,10 +1,3 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 import sys
 import time
@@ -16,9 +9,7 @@ project = "Madoc"
 copyright = f'2024-{time.strftime("%Y")}, Laurent Jouron'
 author = "Laurent Jouron"
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
+# General configuration
 extensions = [
     "notfound.extension",
     "sphinx.ext.extlinks",
@@ -55,6 +46,10 @@ nitpicky = True
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "furo"
+html_static_path = ["_static"]
+html_logo = "_static/ikigai-cercle.png"
+html_favicon = "_static/ikigai-cercle.png"
+html_title = "Madoc"
 html_theme_options = {
     "source_repository": "https://github.com/LaurentJouron/madoc",
     "source_directory": "docs/",
@@ -68,6 +63,12 @@ html_theme_options = {
         "font-stack": "Verdana, Arial, sans-serif",
         "font-stack--monospace": "Courier, monospace",
     },
+    "dark_css_variables": {
+        "color-brand-primary": "#3c65af",
+        "color-brand-content": "#3c65af",
+        "font-stack": "Verdana, Arial, sans-serif",
+        "font-stack--monospace": "Courier, monospace",
+    },
     "footer_icons": [
         {
             "name": "GitHub",
@@ -78,7 +79,6 @@ html_theme_options = {
     ],
 }
 
-html_static_path = ["_static"]
 html_css_files = [
     "devguide_overrides.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
@@ -89,9 +89,6 @@ html_css_files = [
 html_js_files = [
     "activate_tab.js",
 ]
-html_logo = "_static/ikigai-cercle.png"
-html_favicon = "_static/ikigai-cercle.png"
-html_title = "Madoc"
 
 pygments_style = "sphinx"
 pygments_dark_style = "monokai"
@@ -102,9 +99,6 @@ todo_include_todos = True
 notfound_urls_prefix = "/"
 
 # sphinx.ext.extlinks
-# This config is a dictionary of external sites,
-# mapping unique short aliases to a base URL and a prefix.
-# https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
 extlinks = {
     "github": ("https://github.com/%s/", "%s"),
 }
@@ -118,9 +112,7 @@ ogp_custom_meta_tags = [
     '<meta property="og:image:height" content="200">',
     '<meta name="theme-color" content="#3776ab">',
 ]
-# Strip the dollar prompt when copying code
-# https://sphinx-copybutton.readthedocs.io/en/latest/use.html#strip-and-configure-input-prompts-for-code-cells
-copybutton_prompt_text = "$ "
 
-# https://sphinx-copybutton.readthedocs.io/en/latest/use.html#honor-line-continuation-characters-when-copying-multline-snippets
+# Strip the dollar prompt when copying code
+copybutton_prompt_text = "$ "
 copybutton_line_continuation_character = "\\"

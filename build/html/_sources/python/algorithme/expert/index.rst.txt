@@ -4,7 +4,7 @@ Expert
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    arithmetic_analysis/index
    binary_tree

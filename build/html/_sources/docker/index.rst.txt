@@ -27,7 +27,7 @@ en fournissant une méthode standardisée pour créer et exécuter des conteneur
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    docker_compose/index
    dockerfile/index

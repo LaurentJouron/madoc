@@ -13,7 +13,7 @@ Django
     `Django <https://www.djangoproject.com/>`_.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    drf/index
    wagtail/index

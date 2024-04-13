@@ -13,7 +13,7 @@ Github
     `Github <https://docs.github.com/fr>`_.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    actions/index
    initialisation/index

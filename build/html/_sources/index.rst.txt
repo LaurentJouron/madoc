@@ -207,7 +207,7 @@ Full table of contents
 ----------------------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 5
 
    python/index
    django/index

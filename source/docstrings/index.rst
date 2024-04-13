@@ -37,7 +37,7 @@ Ces styles docstring permettent aux développeurs de comprendre rapidement comme
 Il existe plusieurs styles de docstrings en Python, mais deux des plus courants sont:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    google
    numpy_scipy

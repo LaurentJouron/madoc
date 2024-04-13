@@ -58,6 +58,6 @@ en vérifiant la conformité avec les conventions de style et en fournissant une
 Flake8 peut aider à maintenir un code propre, lisible et facilement maintenable dans les projets Python.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    inistalisation
