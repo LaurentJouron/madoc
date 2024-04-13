@@ -57,17 +57,44 @@ nitpicky = True
 html_theme = "furo"
 html_theme_options = {
     "source_repository": "https://github.com/LaurentJouron/madoc",
+    "source_directory": "docs/",
     "source_branch": "main/source",
+    "sidebar_hide_name": True,
+    "navigation_with_keys": True,
+    "top_of_page_button": None,
+    "light_css_variables": {
+        "color-brand-primary": "#bf1e2e",
+        "color-brand-content": "#bf1e2e",
+        "font-stack": "Verdana, Arial, sans-serif",
+        "font-stack--monospace": "Courier, monospace",
+    },
+    "footer_icons": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/LaurentJouron/madoc",
+            "html": "",
+            "class": "fa-brands fa-solid fa-github fa-2x",
+        },
+    ],
 }
+
 html_static_path = ["_static"]
 html_css_files = [
     "devguide_overrides.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 ]
+
 html_js_files = [
     "activate_tab.js",
 ]
 html_logo = "_static/ikigai-cercle.png"
 html_favicon = "_static/ikigai-cercle.png"
+html_title = "Madoc"
+
+pygments_style = "sphinx"
+pygments_dark_style = "monokai"
 
 todo_include_todos = True
 

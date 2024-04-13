@@ -17,33 +17,40 @@
 <link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Recherche" href="../../../../search.html" /><link rel="next" title="Intersection" href="intersection.html" /><link rel="prev" title="Analyse arithmétique" href="index.html" />
 
     <link rel="shortcut icon" href="../../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
-        <title>Bissection - Documentation Madoc</title>
-      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=a746c00c" />
+        <title>Bissection - Madoc</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo-extensions.css?v=36a5483c" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/devguide_overrides.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" />
     
     
 
 
 <style>
   body {
-    --color-code-background: #f8f8f8;
+    --color-code-background: #eeffcc;
   --color-code-foreground: black;
+  --color-brand-primary: #bf1e2e;
+  --color-brand-content: #bf1e2e;
+  --font-stack: Verdana, Arial, sans-serif;
+  --font-stack--monospace: Courier, monospace;
   
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+        --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
   
       }
     }
@@ -137,7 +144,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../../index.html"><div class="brand">Documentation Madoc </div></a>
+      <a href="../../../../index.html"><div class="brand">Madoc</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -163,7 +170,6 @@
     <img class="sidebar-logo" src="../../../../_static/ikigai-cercle.png" alt="Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">Documentation Madoc </span>
   
 </a><form class="sidebar-search-container" method="get" action="../../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Recherche" name="q" aria-label="Recherche">
@@ -211,12 +217,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../../docker/docker_compose/index.html">Docker-compose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../docker/dockerfile/index.html">Dockerfile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../docker/dockerhub/index.html">Dockerhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../docker/installation.html">Installation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../../github/index.html">Github</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Github</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../../github/actions/index.html">Actions</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../../../github/initialisation/index.html">Initialisation</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of Initialisation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../../github/initialisation/compte.html">Creation d’un compte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../github/initialisation/compte.html">Création d’un compte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../github/initialisation/repository.html">Repository</a></li>
 </ul>
 </li>
@@ -252,16 +259,7 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/LaurentJouron/madoc/edit/main/source/python/algorithme/expert/arithmetic_analysis/bissection.rst" title="Edit this page">
-    <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
-      <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
-    </svg>
-    <span class="visually-hidden">Edit this page</span>
-  </a>
-</div><div class="theme-toggle-container theme-toggle-content">
+          <div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -388,7 +386,10 @@ la précision souhaitée.</p>
             
           </div>
           <div class="right-details">
-            
+            <div class="icons">
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/LaurentJouron/madoc" aria-label="GitHub"></a>
+              
+            </div>
           </div>
         </div>
         
@@ -421,7 +422,7 @@ la précision souhaitée.</p>
       
     </aside>
   </div>
-</div><script src="../../../../_static/documentation_options.js?v=d1a510d7"></script>
+</div><script src="../../../../_static/documentation_options.js?v=0ef26a9d"></script>
     <script src="../../../../_static/doctools.js?v=888ff710"></script>
     <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/scripts/furo.js?v=32e29ea5"></script>
