@@ -1,0 +1,47 @@
+.. _initialisation :
+
+====================
+Initialise un projet
+====================
+
+.. code-block:: shell
+
+    mkdir <nom projet>
+
+.. code-block:: shell
+
+    cd <nom projet>
+
+.. code-block:: shell
+
+    mkdir .venv
+
+.. tab:: pipenv
+
+    .. code-block:: shell
+
+        pipenv install
+
+.. tab:: pip
+
+    .. code-block:: shell
+
+        pip install
+
+.. code-block:: shell
+
+    pipenv shell
+
+.. code-block:: shell
+
+    pipenv install django
+
+.. code-block:: shell
+
+    django-admin startptoject config .
+
+
+
+
+
+

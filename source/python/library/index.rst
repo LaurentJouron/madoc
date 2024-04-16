@@ -7,3 +7,4 @@ Library
 
    pandas/index
    fake/index
+   beautifulsoup/index

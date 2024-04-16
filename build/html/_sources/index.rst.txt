@@ -173,9 +173,12 @@ Library
    :target: https://pandas.pydata.org/docs/
 
 .. image:: https://img.shields.io/badge/Fake-%23646464.svg?style=for-the-badge
-   :alt: Pandas Badge
-   :target: https://pandas.pydata.org/docs/
+   :alt: Fake Badge
+   :target: https://faker.readthedocs.io/en/master/
 
+.. image:: https://img.shields.io/badge/Beautiful%20Soup-4B8BBE.svg?style=for-the-badge&logo=python&logoColor=white
+   :alt: Beautifulsoup Badge
+   :target: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 Convention
 ----------
