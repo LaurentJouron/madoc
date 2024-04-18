@@ -3,21 +3,21 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="BeautifulSoup" />
+<meta property="og:title" content="Fonctionnalitées" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://laurentjouron.github.io/python/library/beautifulsoup/index.html" />
+<meta property="og:url" content="https://laurentjouron.github.io/python/library/beautifulsoup/fonctionnalities.html" />
 <meta property="og:site_name" content="Madoc" />
-<meta property="og:description" content="Web Scraping avec BeautifulSoup et Requests: Le web scraping est le processus automatisé d’extraction de données structurées à partir de pages Web. Cela implique l’accès et l’analyse par programme ..." />
+<meta property="og:description" content="Analyse HTML/XML: BeautifulSoup permet d’analyser des documents HTML et XML, en les convertissant en une arborescence d’analyse dans laquelle on peut naviguer.. Navigation facile: Une fois le docum..." />
 <meta property="og:image" content="https://laurentjouron.github.io/_static/ikigai-cercle.png" />
 <meta property="og:image:alt" content="Madoc" />
-<meta name="description" content="Web Scraping avec BeautifulSoup et Requests: Le web scraping est le processus automatisé d’extraction de données structurées à partir de pages Web. Cela implique l’accès et l’analyse par programme ..." />
+<meta name="description" content="Analyse HTML/XML: BeautifulSoup permet d’analyser des documents HTML et XML, en les convertissant en une arborescence d’analyse dans laquelle on peut naviguer.. Navigation facile: Une fois le docum..." />
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 <meta name="theme-color" content="#3776ab">
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Composants" href="composants.html" /><link rel="prev" title="Fake" href="../fake/index.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Exemple Beautifulsoup" href="beautifulsoup_exemple.html" /><link rel="prev" title="Composants" href="composants.html" />
 
     <link rel="shortcut icon" href="../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
-        <title>BeautifulSoup - Madoc</title>
+        <title>Fonctionnalitées - Madoc</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -197,9 +197,10 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="../index.html">Library</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Library</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../pandas/index.html">Pandas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../fake/index.html">Fake</a></li>
-<li class="toctree-l3 current has-children current-page"><a class="current reference internal" href="#">BeautifulSoup</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of BeautifulSoup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="index.html">BeautifulSoup</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of BeautifulSoup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="initialisation.html">Initialisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="composants.html">Composants</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fonctionnalities.html">Fonctionnalitées</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Fonctionnalitées</a></li>
 <li class="toctree-l4"><a class="reference internal" href="beautifulsoup_exemple.html">Exemple Beautifulsoup</a></li>
 </ul>
 </li>
@@ -288,53 +289,59 @@
           </label>
         </div>
         <article role="main">
-          <section id="beautifulsoup">
-<h1>BeautifulSoup<a class="headerlink" href="#beautifulsoup" title="Link to this heading">#</a></h1>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<a class="reference external image-reference" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><img alt="Beautifulsoup Badge" src="https://img.shields.io/badge/Beautiful%20Soup-4B8BBE.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white" /></a>
-<p>Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels.
-En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages
-<a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautifulsoup</a></p>
-</div>
-<section id="web-scraping-avec-beautifulsoup-et-requests">
-<h2>Web Scraping avec BeautifulSoup et Requests<a class="headerlink" href="#web-scraping-avec-beautifulsoup-et-requests" title="Link to this heading">#</a></h2>
-<p>Le web scraping est le processus automatisé d’extraction de données structurées à partir de pages Web.
-Cela implique l’accès et l’analyse par programme du contenu HTML ou XML d’une page Web pour extraire
-des informations spécifiques, telles que du texte, des images, des liens ou d’autres éléments.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="composants.html">Composants</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#processus-automatise">Processus automatisé</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#requetes-http">Requêtes HTTP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#analyse-html-xml">Analyse HTML/XML</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#extraction-de-donnees">Extraction de données</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#transformation-des-donnees">Transformation des données</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#automatisation-et-evolutivite">Automatisation et évolutivité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#considerations-juridiques-et-ethiques">Considérations juridiques et éthiques</a></li>
+          <section id="fonctionnalitees">
+<span id="fonctionnalities"></span><h1>Fonctionnalitées<a class="headerlink" href="#fonctionnalitees" title="Link to this heading">#</a></h1>
+<section id="analyse-html-xml">
+<h2>Analyse HTML/XML<a class="headerlink" href="#analyse-html-xml" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>BeautifulSoup permet d’analyser des documents HTML et XML, en les convertissant en une arborescence d’analyse dans laquelle on peut naviguer.</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="fonctionnalities.html">Fonctionnalitées</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#analyse-html-xml">Analyse HTML/XML</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#navigation-facile">Navigation facile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#recherche-et-extraction">Recherche et extraction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#gestion-du-html-casse">Gestion du HTML cassé</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#prise-en-charge-de-differents-analyseurs">Prise en charge de différents analyseurs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#detection-d-encodage">Détection d’encodage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#modification-et-creation">Modification et création</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#integration-avec-d-autres-bibliotheques">Intégration avec d’autres bibliothèques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#conclusion">Conclusion</a></li>
+</section>
+<section id="navigation-facile">
+<h2>Navigation facile<a class="headerlink" href="#navigation-facile" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Une fois le document analysé, on peut naviguer dans l’arborescence d’analyse à l’aide de méthodes et d’attributs intuitifs pour accéder à des éléments spécifiques, tels que des balises, des attributs et du contenu textuel.</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="beautifulsoup_exemple.html">Exemple Beautifulsoup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#definir-les-fonctions">Définir les fonctions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#bloc-principal">Bloc principal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#execution-du-code">Exécution du code</a></li>
+</section>
+<section id="recherche-et-extraction">
+<h2>Recherche et extraction<a class="headerlink" href="#recherche-et-extraction" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>BeautifulSoup fournit des méthodes puissantes pour rechercher et extraire des éléments spécifiques en fonction de divers critères, tels que le nom de la balise, la classe CSS, les attributs, etc. Cela facilite l’extraction efficace des données des pages Web.</p></li>
 </ul>
-</li>
+</section>
+<section id="gestion-du-html-casse">
+<h2>Gestion du HTML cassé<a class="headerlink" href="#gestion-du-html-casse" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Il peut gérer avec élégance le HTML mal formaté ou cassé, ce qui le rend adapté aux tâches de scraping Web réelles où le HTML peut ne pas être parfaitement structuré.</p></li>
 </ul>
-</div>
+</section>
+<section id="prise-en-charge-de-differents-analyseurs">
+<h2>Prise en charge de différents analyseurs<a class="headerlink" href="#prise-en-charge-de-differents-analyseurs" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>BeautifulSoup prend en charge différents analyseurs, y compris les outils intégrés de Python html.parser, lxml, et html5lib. Cette flexibilité permet de choisir l’analyseur le plus approprié en fonction des besoins et des exigences spécifiques.</p></li>
+</ul>
+</section>
+<section id="detection-d-encodage">
+<h2>Détection d’encodage<a class="headerlink" href="#detection-d-encodage" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Il détecte automatiquement l’encodage du document et le convertit en Unicode, simplifiant ainsi la gestion des différents encodages de caractères.</p></li>
+</ul>
+</section>
+<section id="modification-et-creation">
+<h2>Modification et création<a class="headerlink" href="#modification-et-creation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>On peut modifier l’arborescence d’analyse en ajoutant, supprimant ou modifiant des éléments, des attributs et du contenu textuel. On peux également créer de nouveaux documents HTML ou XML à partir de zéro.</p></li>
+</ul>
+</section>
+<section id="integration-avec-d-autres-bibliotheques">
+<h2>Intégration avec d’autres bibliothèques<a class="headerlink" href="#integration-avec-d-autres-bibliotheques" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>BeautifulSoup peut être facilement intégré à d’autres bibliothèques et outils couramment utilisés dans les flux de travail de scraping Web, tels que Requests la récupération de pages Web et pandas l’analyse et la manipulation de données.</p></li>
+</ul>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>Dans l’ensemble, BeautifulSoup est une bibliothèque polyvalente et conviviale qui simplifie le processus de web scraping en fournissant des outils pratiques pour extraire et manipuler des données à partir de documents HTML et XML. Son riche ensemble de fonctionnalités, ainsi que sa facilité d’utilisation, en font un choix populaire parmi les développeurs Python pour les tâches de web scraping.</p>
 </section>
 </section>
 
@@ -343,23 +350,23 @@ des informations spécifiques, telles que du texte, des images, des liens ou d�
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="composants.html">
+          <a class="next-page" href="beautifulsoup_exemple.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Composants</div>
+                <div class="title">Exemple Beautifulsoup</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../fake/index.html">
+          <a class="prev-page" href="composants.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Fake</div>
+                <div class="title">Composants</div>
                 
               </div>
             </a>
@@ -396,8 +403,16 @@ des informations spécifiques, telles que du texte, des images, des liens ou d�
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">BeautifulSoup</a><ul>
-<li><a class="reference internal" href="#web-scraping-avec-beautifulsoup-et-requests">Web Scraping avec BeautifulSoup et Requests</a></li>
+<li><a class="reference internal" href="#">Fonctionnalitées</a><ul>
+<li><a class="reference internal" href="#analyse-html-xml">Analyse HTML/XML</a></li>
+<li><a class="reference internal" href="#navigation-facile">Navigation facile</a></li>
+<li><a class="reference internal" href="#recherche-et-extraction">Recherche et extraction</a></li>
+<li><a class="reference internal" href="#gestion-du-html-casse">Gestion du HTML cassé</a></li>
+<li><a class="reference internal" href="#prise-en-charge-de-differents-analyseurs">Prise en charge de différents analyseurs</a></li>
+<li><a class="reference internal" href="#detection-d-encodage">Détection d’encodage</a></li>
+<li><a class="reference internal" href="#modification-et-creation">Modification et création</a></li>
+<li><a class="reference internal" href="#integration-avec-d-autres-bibliotheques">Intégration avec d’autres bibliothèques</a></li>
+<li><a class="reference internal" href="#conclusion">Conclusion</a></li>
 </ul>
 </li>
 </ul>

@@ -3,21 +3,21 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="BeautifulSoup" />
+<meta property="og:title" content="Exemple Beautifulsoup" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://laurentjouron.github.io/python/library/beautifulsoup/index.html" />
+<meta property="og:url" content="https://laurentjouron.github.io/python/library/beautifulsoup/beautifulsoup_exemple.html" />
 <meta property="og:site_name" content="Madoc" />
-<meta property="og:description" content="Web Scraping avec BeautifulSoup et Requests: Le web scraping est le processus automatisé d’extraction de données structurées à partir de pages Web. Cela implique l’accès et l’analyse par programme ..." />
+<meta property="og:description" content="Exploration de code Python à l’aide de BeautifulSoup et Requests pour effectuer du web scraping, en particulier pour découvrir les technologies utilisées par un site Web désigné. Installation: Inst..." />
 <meta property="og:image" content="https://laurentjouron.github.io/_static/ikigai-cercle.png" />
 <meta property="og:image:alt" content="Madoc" />
-<meta name="description" content="Web Scraping avec BeautifulSoup et Requests: Le web scraping est le processus automatisé d’extraction de données structurées à partir de pages Web. Cela implique l’accès et l’analyse par programme ..." />
+<meta name="description" content="Exploration de code Python à l’aide de BeautifulSoup et Requests pour effectuer du web scraping, en particulier pour découvrir les technologies utilisées par un site Web désigné. Installation: Inst..." />
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 <meta name="theme-color" content="#3776ab">
-<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Composants" href="composants.html" /><link rel="prev" title="Fake" href="../fake/index.html" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Recherche" href="../../../search.html" /><link rel="next" title="Environnement virtuel" href="../../virtual_environment/index.html" /><link rel="prev" title="Fonctionnalitées" href="fonctionnalities.html" />
 
     <link rel="shortcut icon" href="../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
-        <title>BeautifulSoup - Madoc</title>
+        <title>Exemple Beautifulsoup - Madoc</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -197,10 +197,11 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="../index.html">Library</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Library</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../pandas/index.html">Pandas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../fake/index.html">Fake</a></li>
-<li class="toctree-l3 current has-children current-page"><a class="current reference internal" href="#">BeautifulSoup</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of BeautifulSoup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="index.html">BeautifulSoup</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of BeautifulSoup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="initialisation.html">Initialisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="composants.html">Composants</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fonctionnalities.html">Fonctionnalitées</a></li>
-<li class="toctree-l4"><a class="reference internal" href="beautifulsoup_exemple.html">Exemple Beautifulsoup</a></li>
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Exemple Beautifulsoup</a></li>
 </ul>
 </li>
 </ul>
@@ -288,52 +289,157 @@
           </label>
         </div>
         <article role="main">
-          <section id="beautifulsoup">
-<h1>BeautifulSoup<a class="headerlink" href="#beautifulsoup" title="Link to this heading">#</a></h1>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<a class="reference external image-reference" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><img alt="Beautifulsoup Badge" src="https://img.shields.io/badge/Beautiful%20Soup-4B8BBE.svg?style=for-the-badge&amp;logo=python&amp;logoColor=white" /></a>
-<p>Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels.
-En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages
-<a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautifulsoup</a></p>
+          <section id="exemple-beautifulsoup">
+<span id="beautifulsoup-exemple"></span><h1>Exemple Beautifulsoup<a class="headerlink" href="#exemple-beautifulsoup" title="Link to this heading">#</a></h1>
+<p>Exploration de code Python à l’aide de BeautifulSoup et Requests pour effectuer du web scraping,
+en particulier pour découvrir les technologies utilisées par un site Web désigné.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
+<p>Installation de Requests</p>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">pipenv</label><div class="tab-content docutils container">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pipenv<span class="w"> </span>install<span class="w"> </span>requests
+</pre></div>
 </div>
-<section id="web-scraping-avec-beautifulsoup-et-requests">
-<h2>Web Scraping avec BeautifulSoup et Requests<a class="headerlink" href="#web-scraping-avec-beautifulsoup-et-requests" title="Link to this heading">#</a></h2>
-<p>Le web scraping est le processus automatisé d’extraction de données structurées à partir de pages Web.
-Cela implique l’accès et l’analyse par programme du contenu HTML ou XML d’une page Web pour extraire
-des informations spécifiques, telles que du texte, des images, des liens ou d’autres éléments.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="composants.html">Composants</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#processus-automatise">Processus automatisé</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#requetes-http">Requêtes HTTP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#analyse-html-xml">Analyse HTML/XML</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#extraction-de-donnees">Extraction de données</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#transformation-des-donnees">Transformation des données</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#automatisation-et-evolutivite">Automatisation et évolutivité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="composants.html#considerations-juridiques-et-ethiques">Considérations juridiques et éthiques</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="fonctionnalities.html">Fonctionnalitées</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#analyse-html-xml">Analyse HTML/XML</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#navigation-facile">Navigation facile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#recherche-et-extraction">Recherche et extraction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#gestion-du-html-casse">Gestion du HTML cassé</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#prise-en-charge-de-differents-analyseurs">Prise en charge de différents analyseurs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#detection-d-encodage">Détection d’encodage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#modification-et-creation">Modification et création</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#integration-avec-d-autres-bibliotheques">Intégration avec d’autres bibliothèques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fonctionnalities.html#conclusion">Conclusion</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="beautifulsoup_exemple.html">Exemple Beautifulsoup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#definir-les-fonctions">Définir les fonctions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#bloc-principal">Bloc principal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beautifulsoup_exemple.html#execution-du-code">Exécution du code</a></li>
-</ul>
-</li>
-</ul>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">pip</label><div class="tab-content docutils container">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>requests
+</pre></div>
+</div>
+</div>
+</div>
+<p>Installation de BeautifulSoup</p>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--1-input--1" name="tab-set--1" type="radio"><label class="tab-label" for="tab-set--1-input--1">pipenv</label><div class="tab-content docutils container">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pipenv<span class="w"> </span>install<span class="w"> </span>beautifulsoup4
+</pre></div>
+</div>
+</div>
+<input class="tab-input" id="tab-set--1-input--2" name="tab-set--1" type="radio"><label class="tab-label" for="tab-set--1-input--2">pip</label><div class="tab-content docutils container">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>beautifulsoup4
+</pre></div>
+</div>
+</div>
+</div>
+<p>Import des bibliothèques dans un fichier Python</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</pre></div>
+</div>
+</section>
+<section id="definir-les-fonctions">
+<h2>Définir les fonctions<a class="headerlink" href="#definir-les-fonctions" title="Link to this heading">#</a></h2>
+<p>get_html_content(url) enverra une requête GET à l’URL fournie et renverra le contenu HTML de la page Web.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_html_content</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Send a GET request to the URL</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error occurred while fetching HTML content: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p>Définir une autre fonction nommée extract_meta_tags(html_content) qui extrait toutes les balises méta du contenu HTML.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_meta_tags</span><span class="p">(</span><span class="n">html_content</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Parse the HTML content of the page</span>
+        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+        <span class="c1"># Extracting meta tags for technology detection</span>
+        <span class="n">meta_tags</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">meta_tags</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error occurred while extracting meta tags: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[]</span>
+</pre></div>
+</div>
+<p>Définir une autre fonction nommée extract_script_tags(html_content) pour extraire toutes les balises de script du contenu HTML fourni.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_script_tags</span><span class="p">(</span><span class="n">html_content</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Parse the HTML content of the page</span>
+        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_content</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+        <span class="c1"># Extracting script tags for JavaScript libraries</span>
+        <span class="n">script_tags</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">script_tags</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error occurred while extracting script tags: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[]</span>
+</pre></div>
+</div>
+<p>Nous définirons une fonction nommée extract_technologies_from_meta_tags(meta_tags)pour extraire les technologies mentionnées dans les balises méta fournies.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_technologies_from_meta_tags</span><span class="p">(</span><span class="n">meta_tags</span><span class="p">):</span>
+    <span class="n">technologies</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">meta_tags</span><span class="p">:</span>
+        <span class="c1"># Check for technology-related meta tags</span>
+        <span class="k">if</span> <span class="s1">&#39;name&#39;</span> <span class="ow">in</span> <span class="n">tag</span><span class="o">.</span><span class="n">attrs</span> <span class="ow">and</span> <span class="s1">&#39;content&#39;</span> <span class="ow">in</span> <span class="n">tag</span><span class="o">.</span><span class="n">attrs</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">tag</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;generator&#39;</span><span class="p">,</span> <span class="s1">&#39;framework&#39;</span><span class="p">,</span> <span class="s1">&#39;cms&#39;</span><span class="p">,</span> <span class="s1">&#39;platform&#39;</span><span class="p">]:</span>
+                <span class="n">technologies</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">tag</span><span class="p">[</span><span class="s1">&#39;content&#39;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">technologies</span>
+</pre></div>
+</div>
+<p>Définirons une autre fonction nommée extract_technologies_from_script_tags(script_tags) pour extraire les technologies des URL de la bibliothèque JavaScript mentionnées dans les balises de script.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_technologies_from_script_tags</span><span class="p">(</span><span class="n">script_tags</span><span class="p">):</span>
+    <span class="n">technologies</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">script_tags</span><span class="p">:</span>
+        <span class="c1"># Check for JavaScript library URLs</span>
+        <span class="k">if</span> <span class="s1">&#39;src&#39;</span> <span class="ow">in</span> <span class="n">tag</span><span class="o">.</span><span class="n">attrs</span><span class="p">:</span>
+            <span class="n">src</span> <span class="o">=</span> <span class="n">tag</span><span class="p">[</span><span class="s1">&#39;src&#39;</span><span class="p">]</span>
+            <span class="c1"># Extracting library name from URL</span>
+            <span class="k">if</span> <span class="s1">&#39;/&#39;</span> <span class="ow">in</span> <span class="n">src</span><span class="p">:</span>
+                <span class="n">library</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">technologies</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">library</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">technologies</span>
+</pre></div>
+</div>
+<p>Création d’une fonction nommée get_detected_technologies(url) qui orchestre le processus de détection des technologies utilisées dans un site Web.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_detected_technologies</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="n">html_content</span> <span class="o">=</span> <span class="n">get_html_content</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">html_content</span><span class="p">:</span>
+        <span class="n">meta_tags</span> <span class="o">=</span> <span class="n">extract_meta_tags</span><span class="p">(</span><span class="n">html_content</span><span class="p">)</span>
+        <span class="n">script_tags</span> <span class="o">=</span> <span class="n">extract_script_tags</span><span class="p">(</span><span class="n">html_content</span><span class="p">)</span>
+        <span class="n">technologies_from_meta_tags</span> <span class="o">=</span> <span class="n">extract_technologies_from_meta_tags</span><span class="p">(</span><span class="n">meta_tags</span><span class="p">)</span>
+        <span class="n">technologies_from_script_tags</span> <span class="o">=</span> <span class="n">extract_technologies_from_script_tags</span><span class="p">(</span><span class="n">script_tags</span><span class="p">)</span>
+        <span class="n">detected_technologies</span> <span class="o">=</span> <span class="n">technologies_from_meta_tags</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">technologies_from_script_tags</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">detected_technologies</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</section>
+<section id="bloc-principal">
+<h2>Bloc principal<a class="headerlink" href="#bloc-principal" title="Link to this heading">#</a></h2>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">website_url</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the URL of the website: &quot;</span><span class="p">)</span>
+    <span class="n">detected_technologies</span> <span class="o">=</span> <span class="n">get_detected_technologies</span><span class="p">(</span><span class="n">website_url</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">detected_technologies</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Technologies used in the website:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">tech</span> <span class="ow">in</span> <span class="n">detected_technologies</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">tech</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Failed to detect technologies.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="execution-du-code">
+<h2>Exécution du code<a class="headerlink" href="#execution-du-code" title="Link to this heading">#</a></h2>
+<p>Après avoir consolidé tous les codes de fonction individuels dans un seul fichier Python, lors de l’exécution du script et de la fourniture d’une entrée URL de site Web, le script affichera les technologies utilisées par le site Web, comme le montre l’image ci-jointe.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Enter<span class="w"> </span>the<span class="w"> </span>URL<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>website:<span class="w"> </span>***********
+Technologies<span class="w"> </span>used<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>website:
+dark-mode
+fontend-custom
+sassy-social-share-public
+mpp-frontend
+jquery
+endless-river
+adsbygoogle
+WordPress<span class="w"> </span><span class="m">6</span>.5.2
+custom
+wdv-about-me-widget-public
+navigation
+jquery-migrate
+slick
+</pre></div>
 </div>
 </section>
 </section>
@@ -343,23 +449,23 @@ des informations spécifiques, telles que du texte, des images, des liens ou d�
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="composants.html">
+          <a class="next-page" href="../../virtual_environment/index.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Composants</div>
+                <div class="title">Environnement virtuel</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../fake/index.html">
+          <a class="prev-page" href="fonctionnalities.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Fake</div>
+                <div class="title">Fonctionnalitées</div>
                 
               </div>
             </a>
@@ -396,8 +502,11 @@ des informations spécifiques, telles que du texte, des images, des liens ou d�
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">BeautifulSoup</a><ul>
-<li><a class="reference internal" href="#web-scraping-avec-beautifulsoup-et-requests">Web Scraping avec BeautifulSoup et Requests</a></li>
+<li><a class="reference internal" href="#">Exemple Beautifulsoup</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#definir-les-fonctions">Définir les fonctions</a></li>
+<li><a class="reference internal" href="#bloc-principal">Bloc principal</a></li>
+<li><a class="reference internal" href="#execution-du-code">Exécution du code</a></li>
 </ul>
 </li>
 </ul>

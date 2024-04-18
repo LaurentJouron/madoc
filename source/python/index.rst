@@ -9,27 +9,11 @@ Python
         :target: https://docs.python.org/3/
 
     Tout en étant le plus proche de la documentation officielle, ces notes sont rédigées pour des projets personnels. 
-    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages 
-    `Python <https://docs.python.org/3/>`_.
+    En fonction des besoins, il faut se rendre sur la documentation officielle et adapter les paramétrages    
+      
+   .. raw:: html
 
-
-   .. tab:: Unix
-
-      .. code-block:: shell
-
-         make patchcheck
-
-   .. tab:: macOS
-
-      .. code-block:: shell
-
-         make patchcheck
-
-   .. tab:: Windows
-
-      .. code-block:: dosbatch
-
-         .\python.bat Tools\patchcheck\patchcheck.py
+      <a href="https://docs.python.org/3/" class="button" target=_blank>Python</a>
 
 
 .. toctree::
