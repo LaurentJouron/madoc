@@ -13,9 +13,6 @@ BeautifulSoup
     `Beautifulsoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`_ 
 
 
-Web Scraping avec BeautifulSoup et Requests
--------------------------------------------
-
 Le web scraping est le processus automatisé d'extraction de données structurées à partir de pages Web. 
 Cela implique l'accès et l'analyse par programme du contenu HTML ou XML d'une page Web pour extraire 
 des informations spécifiques, telles que du texte, des images, des liens ou d'autres éléments.
