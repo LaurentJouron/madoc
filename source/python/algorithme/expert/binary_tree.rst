@@ -108,3 +108,9 @@ Resultats
 
     False
     5
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

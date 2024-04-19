@@ -254,3 +254,9 @@ le message du commit précédent sans modifier son instantané. L'option -m perm
 .. code-block:: shell
 
     git commit --amend -m "Votre nouveau message de commit"
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

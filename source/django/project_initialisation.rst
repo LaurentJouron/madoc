@@ -75,3 +75,9 @@ installation de Django
    <a href="http://localhost:8000" class="button" target=_blank>
        <img src="../_static/_buttons/button_open_website.png" alt="Bouton" width="200" height="100" />
    </a>
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

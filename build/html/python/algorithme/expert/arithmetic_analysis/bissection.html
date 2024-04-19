@@ -198,7 +198,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../library/pandas/index.html">Pandas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../library/fake/index.html">Fake</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../../library/beautifulsoup/index.html">BeautifulSoup</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of BeautifulSoup</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../library/beautifulsoup/initialisation.html">Initialisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../library/beautifulsoup/composants.html">Composants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../library/beautifulsoup/fonctionnalities.html">Fonctionnalitées</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../library/beautifulsoup/beautifulsoup_exemple.html">Exemple Beautifulsoup</a></li>
 </ul>
 </li>
 </ul>
@@ -223,7 +225,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../../django/index.html">Django</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Django</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../../django/drf/index.html">DRF</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../django/wagtail/index.html">Wagtail</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../../django/initialisation.html">Initialise un projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../django/project_initialisation.html">Initialisation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../../docker/index.html">Docker</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Docker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -298,53 +300,53 @@ utile pour les fonctions continues mais peut nécessiter un nombre important d�
 la précision souhaitée.</p>
 <section id="fonction">
 <h2>Fonction<a class="headerlink" href="#fonction" title="Link to this heading">#</a></h2>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">def</span> <span class="nf">bisection</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">start_interval</span><span class="p">,</span> <span class="n">end_interval</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Finds where the function becomes 0 in [start_interval, end_interval] using the bisection method.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        function: The function for which to find the root.</span>
-<span class="sd">        start_interval: The start of the interval.</span>
-<span class="sd">        end_interval: The end of the interval.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">        The root of the function within the given interval.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">start_interval</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">end_interval</span>
-
-    <span class="k">if</span> <span class="n">function</span><span class="p">(</span><span class="n">start_interval</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">start_interval</span>
-    <span class="k">elif</span> <span class="n">function</span><span class="p">(</span><span class="n">end_interval</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">end_interval</span>
-    <span class="k">elif</span> <span class="n">function</span><span class="p">(</span><span class="n">start_interval</span><span class="p">)</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">end_interval</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Couldn&#39;t find root in [start_interval, end_interval]&quot;</span><span class="p">)</span>
-        <span class="k">return</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">end</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-        <span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">start</span> <span class="o">-</span> <span class="n">mid</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">7</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">function</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">mid</span>
-            <span class="k">elif</span> <span class="n">function</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">start</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">end</span> <span class="o">=</span> <span class="n">mid</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">start</span> <span class="o">=</span> <span class="n">mid</span>
-            <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">end</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-        <span class="k">return</span> <span class="n">mid</span>
-
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    The function f(x) = x^3 - 2x - 5.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        x: The input value.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">        The result of the function.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">math</span>
+</span><span class="linenos"> 2</span>
+<span class="hll"><span class="linenos"> 3</span><span class="k">def</span> <span class="nf">bisection</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">start_interval</span><span class="p">,</span> <span class="n">end_interval</span><span class="p">):</span>
+</span><span class="linenos"> 4</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 5</span><span class="sd">    Finds where the function becomes 0 in [start_interval, end_interval] using the bisection method.</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="sd">    Args:</span>
+<span class="linenos"> 8</span><span class="sd">        function: The function for which to find the root.</span>
+<span class="linenos"> 9</span><span class="sd">        start_interval: The start of the interval.</span>
+<span class="linenos">10</span><span class="sd">        end_interval: The end of the interval.</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="sd">    Returns:</span>
+<span class="linenos">13</span><span class="sd">        The root of the function within the given interval.</span>
+<span class="linenos">14</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">15</span>    <span class="n">start</span> <span class="o">=</span> <span class="n">start_interval</span>
+<span class="linenos">16</span>    <span class="n">end</span> <span class="o">=</span> <span class="n">end_interval</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span>    <span class="k">if</span> <span class="n">function</span><span class="p">(</span><span class="n">start_interval</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">19</span>        <span class="k">return</span> <span class="n">start_interval</span>
+<span class="linenos">20</span>    <span class="k">elif</span> <span class="n">function</span><span class="p">(</span><span class="n">end_interval</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">21</span>        <span class="k">return</span> <span class="n">end_interval</span>
+<span class="linenos">22</span>    <span class="k">elif</span> <span class="n">function</span><span class="p">(</span><span class="n">start_interval</span><span class="p">)</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">end_interval</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">23</span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Couldn&#39;t find root in [start_interval, end_interval]&quot;</span><span class="p">)</span>
+<span class="linenos">24</span>        <span class="k">return</span>
+<span class="linenos">25</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">26</span>        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">end</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="linenos">27</span>        <span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">start</span> <span class="o">-</span> <span class="n">mid</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">7</span><span class="p">:</span>
+<span class="linenos">28</span>            <span class="k">if</span> <span class="n">function</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">29</span>                <span class="k">return</span> <span class="n">mid</span>
+<span class="linenos">30</span>            <span class="k">elif</span> <span class="n">function</span><span class="p">(</span><span class="n">mid</span><span class="p">)</span> <span class="o">*</span> <span class="n">function</span><span class="p">(</span><span class="n">start</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">31</span>                <span class="n">end</span> <span class="o">=</span> <span class="n">mid</span>
+<span class="linenos">32</span>            <span class="k">else</span><span class="p">:</span>
+<span class="linenos">33</span>                <span class="n">start</span> <span class="o">=</span> <span class="n">mid</span>
+<span class="linenos">34</span>            <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">end</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="linenos">35</span>        <span class="k">return</span> <span class="n">mid</span>
+<span class="linenos">36</span>
+<span class="hll"><span class="linenos">37</span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span><span class="linenos">38</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos">39</span><span class="sd">    The function f(x) = x^3 - 2x - 5.</span>
+<span class="linenos">40</span>
+<span class="linenos">41</span><span class="sd">    Args:</span>
+<span class="linenos">42</span><span class="sd">        x: The input value.</span>
+<span class="linenos">43</span>
+<span class="linenos">44</span><span class="sd">    Returns:</span>
+<span class="linenos">45</span><span class="sd">        The result of the function.</span>
+<span class="linenos">46</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">47</span>    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </section>
@@ -359,6 +361,9 @@ la précision souhaitée.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="mf">2.0945515197818168</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></div>
 </section>
 </section>
 

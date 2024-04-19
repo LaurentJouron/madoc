@@ -100,3 +100,9 @@ Il est également possible de modifier le nom de la branche principale de votre 
     git config --global init.defaultBranch main
 
 Cette modification n'est pas obligatoire, mais elle est recommandée pour des raisons de standardisation et de compatibilité avec d'autres dépôts.
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

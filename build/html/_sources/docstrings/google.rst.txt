@@ -53,3 +53,9 @@ Resultats
 
     Returns:
         int: The sum of the two numbers.
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

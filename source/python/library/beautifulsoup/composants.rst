@@ -52,3 +52,9 @@ Dans l'ensemble, le web scraping permet d'extraire des données du Web à divers
 Lorsqu’on parle de web scraping en Python, BeautifulSoup occupe le devant de la scène en tant que principal interprète.
 
 BeautifulSoup est une bibliothèque Python conçue pour les tâches de web scraping, en particulier pour l'analyse de documents HTML et XML. Il fournit des outils pour naviguer, rechercher et modifier l'arborescence d'analyse générée à partir du code source de la page Web.
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

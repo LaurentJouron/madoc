@@ -60,4 +60,10 @@ Resultats
     Returns
     -------
     numpy.ndarray
-        The resulting matrix after multiplication. 
+        The resulting matrix after multiplication.
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

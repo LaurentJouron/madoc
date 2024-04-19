@@ -90,3 +90,9 @@ Resultats
     [[  2.   -2.    1. ]
     [  0.    1.    2. ]
     [  0.    0.  -17.5]]
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

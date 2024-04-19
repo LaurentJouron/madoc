@@ -57,3 +57,9 @@ Conclusion
 ----------
 
 Dans l'ensemble, BeautifulSoup est une bibliothèque polyvalente et conviviale qui simplifie le processus de web scraping en fournissant des outils pratiques pour extraire et manipuler des données à partir de documents HTML et XML. Son riche ensemble de fonctionnalités, ainsi que sa facilité d'utilisation, en font un choix populaire parmi les développeurs Python pour les tâches de web scraping.
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

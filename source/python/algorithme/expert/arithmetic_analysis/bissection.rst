@@ -17,6 +17,8 @@ Fonction
 --------
 
 .. code-block:: Python
+    :emphasize-lines: 1,3,37
+    :linenos:
 
     import math
 
@@ -81,3 +83,9 @@ Resultats
 .. code-block:: Python
 
     2.0945515197818168
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>

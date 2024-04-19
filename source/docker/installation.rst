@@ -45,3 +45,9 @@ Exécution du conteneur de test : Pour vérifier que Docker fonctionne correctem
 .. code-block:: shell
 
     docker run hello-world
+
+.. note::
+
+    .. raw:: html
+
+        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
