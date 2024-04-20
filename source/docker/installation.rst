@@ -50,4 +50,4 @@ Exécution du conteneur de test : Pour vérifier que Docker fonctionne correctem
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

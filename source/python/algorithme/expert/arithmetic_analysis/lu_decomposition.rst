@@ -60,39 +60,37 @@ Fonction
         return L, U
 
 
-Utilisation
------------
+.. tab:: Utilisation
+    
+    .. code-block:: Python
+    
+        matrix = numpy.array([[2, -2, 1],
+                            [0, 1, 2],
+                            [5, 3, 1]])
 
-.. code-block:: Python
+        L, U = lu_decompose(matrix)
+        print("Lower triangular matrix (L):")
+        print(L)
+        print("\nUpper triangular matrix (U):")
+        print(U)
 
-    matrix = numpy.array([[2, -2, 1],
-                        [0, 1, 2],
-                        [5, 3, 1]])
+.. tab:: Resultats
 
-    L, U = lu_decompose(matrix)
-    print("Lower triangular matrix (L):")
-    print(L)
-    print("\nUpper triangular matrix (U):")
-    print(U)
+    .. code-block:: Python
 
+        Lower triangular matrix (L):
+        [[1.  0.  0. ]
+        [0.  1.  0. ]
+        [2.5 8.  1. ]]
 
-Resultats
----------
+        Upper triangular matrix (U):
+        [[  2.   -2.    1. ]
+        [  0.    1.    2. ]
+        [  0.    0.  -17.5]]
 
-.. code-block:: Python
-
-    Lower triangular matrix (L):
-    [[1.  0.  0. ]
-    [0.  1.  0. ]
-    [2.5 8.  1. ]]
-
-    Upper triangular matrix (U):
-    [[  2.   -2.    1. ]
-    [  0.    1.    2. ]
-    [  0.    0.  -17.5]]
 
 .. note::
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

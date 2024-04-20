@@ -103,4 +103,4 @@ Enfin, poussez vos modifications vers le dépôt distant en spécifiant la branc
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

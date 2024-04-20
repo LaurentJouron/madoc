@@ -105,4 +105,4 @@ Cette modification n'est pas obligatoire, mais elle est recommandée pour des ra
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

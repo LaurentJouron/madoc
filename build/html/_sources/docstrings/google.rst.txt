@@ -4,9 +4,11 @@
 Google
 ======
 
-.. image:: https://img.shields.io/badge/docstrings-google-blue.svg?style=for-the-badge&logo=google&logoColor=white
-   :alt: Google Docstrings Badge
-   :target: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
+.. raw :: html
+    
+   <a href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html" target=_blank>
+      <img src="https://img.shields.io/badge/docstrings-google-blue.svg?style=for-the-badge&logo=google&logoColor=white" alt="Google Docstrings Badge">
+   </a>
 
 Style Google
 ------------
@@ -58,4 +60,4 @@ Resultats
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

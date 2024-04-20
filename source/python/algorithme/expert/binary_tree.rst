@@ -93,24 +93,22 @@ Fonction
         print(is_full_binary_tree(tree))
         print(depth_of_tree(tree))
 
-Utilisation
------------
+.. tab:: Utilisation
+    
+    .. code-block:: Python
 
-.. code-block:: Python
+        if __name__ == '__main__':
+            main()
 
-    if __name__ == '__main__':
-        main()
+.. tab:: Resultats
 
-Resultats
----------
+    .. code-block:: Python
 
-.. code-block:: Python
-
-    False
-    5
+        False
+        5
 
 .. note::
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

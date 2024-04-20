@@ -23,7 +23,9 @@ Ensemble, nous pouvons améliorer cette documentation et en faire une ressource 
 Information
 -----------
 
-* **Authors** : `Laurent Jouron <https://laurentjouron.github.io/>`_
+.. raw:: html
+
+   <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
 
 * **Etablissement**: Ikigai
 

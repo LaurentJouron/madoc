@@ -16,7 +16,7 @@
 <meta name="theme-color" content="#3776ab">
 <link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Recherche" href="../../../../search.html" /><link rel="next" title="Lu decomposition" href="lu_decomposition.html" /><link rel="prev" title="Bissection" href="bissection.html" />
 
-    <link rel="shortcut icon" href="../../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
+    <link rel="shortcut icon" href="../../../../_static/ikigai-cercle.png"/><!-- Generated with Sphinx 7.3.7 and Furo 2024.01.29 -->
         <title>Intersection - Madoc</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo.css?v=135e06be" />
@@ -289,7 +289,7 @@
         </div>
         <article role="main">
           <section id="intersection">
-<span id="id1"></span><h1>Intersection<a class="headerlink" href="#intersection" title="Link to this heading">#</a></h1>
+<span id="id1"></span><h1>Intersection<a class="headerlink" href="#intersection" title="Lien vers cette rubrique">¶</a></h1>
 <p>L’algorithme de la sécante est une méthode numérique utilisée pour trouver les intersections d’une
 fonction avec l’axe des x, c’est-à-dire les points où la fonction coupe l’axe des x.
 Pour ce faire, l’algorithme utilise deux points de départ initiaux, x0 et x1, et calcule une approximation
@@ -304,7 +304,7 @@ soit inférieure à un seuil de précision défini.</p>
 <p>La fonction f(x) est la fonction dont nous voulons trouver la racine, dans cet exemple, f(x) = x^3 - 2x - 5.</p>
 <p>Enfin, l’algorithme renvoie la valeur de la racine calculée avec une précision suffisante.</p>
 <section id="fonction">
-<h2>Fonction<a class="headerlink" href="#fonction" title="Link to this heading">#</a></h2>
+<h2>Fonction<a class="headerlink" href="#fonction" title="Lien vers cette rubrique">¶</a></h2>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">intersection</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">initial_guess1</span><span class="p">,</span> <span class="n">initial_guess2</span><span class="p">):</span>
@@ -342,21 +342,21 @@ soit inférieure à un seuil de précision défini.</p>
     <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">5</span>
 </pre></div>
 </div>
-</section>
-<section id="utilisation">
-<h2>Utilisation<a class="headerlink" href="#utilisation" title="Link to this heading">#</a></h2>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Utilisation</label><div class="tab-content docutils container">
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">intersection</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">))</span>
 </pre></div>
 </div>
-</section>
-<section id="resultats">
-<h2>Resultats<a class="headerlink" href="#resultats" title="Link to this heading">#</a></h2>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="mf">2.0945514815435184</span>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Resultats</label><div class="tab-content docutils container">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="m">2</span>.0945514815435184
 </pre></div>
+</div>
+</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></div>
+<strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong></div>
 </section>
 </section>
 
@@ -420,8 +420,6 @@ Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron<
             <ul>
 <li><a class="reference internal" href="#">Intersection</a><ul>
 <li><a class="reference internal" href="#fonction">Fonction</a></li>
-<li><a class="reference internal" href="#utilisation">Utilisation</a></li>
-<li><a class="reference internal" href="#resultats">Resultats</a></li>
 </ul>
 </li>
 </ul>
@@ -434,13 +432,13 @@ Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron<
     </aside>
   </div>
 </div><script src="../../../../_static/documentation_options.js?v=0ef26a9d"></script>
-    <script src="../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/scripts/furo.js?v=32e29ea5"></script>
     <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../../_static/copybutton.js?v=c136e461"></script>
     <script src="../../../../_static/tabs.js?v=3ee01567"></script>
-    <script src="../../../../_static/translations.js?v=d99ca74e"></script>
+    <script src="../../../../_static/translations.js?v=bf059b8c"></script>
     <script src="../../../../_static/activate_tab.js"></script>
     </body>
 </html>

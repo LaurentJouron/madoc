@@ -53,7 +53,7 @@ html_title = "Madoc"
 html_theme_options = {
     "source_repository": "https://github.com/LaurentJouron/madoc",
     "source_directory": "docs/",
-    "source_branch": "main/source",
+    "source_branch": "master/source",
     "sidebar_hide_name": True,
     "navigation_with_keys": True,
     "top_of_page_button": None,

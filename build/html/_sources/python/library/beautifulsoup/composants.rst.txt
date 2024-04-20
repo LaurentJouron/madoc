@@ -57,4 +57,4 @@ BeautifulSoup est une bibliothèque Python conçue pour les tâches de web scrap
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

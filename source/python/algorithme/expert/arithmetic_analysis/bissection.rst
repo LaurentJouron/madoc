@@ -69,23 +69,21 @@ Fonction
         return math.pow(x, 3) - 2*x - 5
 
 
-Utilisation
------------
-
-.. code-block:: Python
+.. tab:: Utilisation
     
-    print(bisection(f, 1, 1000))
+    .. code-block:: Python
+    
+        print(bisection(f, 1, 1000))
 
+.. tab:: Resultats
 
-Resultats
----------
+    .. code-block:: shell
 
-.. code-block:: Python
+        2.0945515197818168
 
-    2.0945515197818168
 
 .. note::
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

@@ -63,23 +63,20 @@ Fonction
         return math.pow(x, 3) - (2 * x) - 5
 
 
-Utilisation
------------
+.. tab:: Utilisation
+    
+    .. code-block:: Python
+    
+        print(intersection(f, 3, 3.5))
 
-.. code-block:: Python
+.. tab:: Resultats
 
-    print(intersection(f, 3, 3.5))
+    .. code-block:: shell
 
-
-Resultats
----------
-
-.. code-block:: Python
-
-    2.0945514815435184
+        2.0945514815435184
 
 .. note::
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>

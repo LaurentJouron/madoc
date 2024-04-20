@@ -58,25 +58,21 @@ Fonction
         """The derivative of f(x)."""
         return 3 * x ** 2 - 2
 
+.. tab:: Utilisation
+    
+    .. code-block:: Python
 
-Utilisation
------------
+        root = newton_method(f, f1, 3)
+        print(f"Approximated root: {root}")
 
-.. code-block:: Python
+.. tab:: Resultats
 
-    root = newton_method(f, f1, 3)
-    print(f"Approximated root: {root}")
+    .. code-block:: Python
 
-
-Resultats
----------
-
-.. code-block:: Python
-
-    Approximated root: 2.0945514815423474
+        Approximated root: 2.0945514815423474
 
 .. note::
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
