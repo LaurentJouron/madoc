@@ -22,6 +22,8 @@ Fonction
 --------
 
 .. code-block:: Python
+    :emphasize-lines: 1,34,53
+    :linenos:
 
     class TreeNode:
     """Class representing a node in a binary tree."""

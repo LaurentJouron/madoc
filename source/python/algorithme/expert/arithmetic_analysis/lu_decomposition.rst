@@ -21,6 +21,8 @@ Fonction
 --------
 
 .. code-block:: Python
+    :emphasize-lines: 1,3
+    :linenos:
 
     import numpy
 
@@ -63,7 +65,8 @@ Fonction
 .. tab:: Utilisation
     
     .. code-block:: Python
-    
+        :emphasize-lines: 5,7,9
+
         matrix = numpy.array([[2, -2, 1],
                             [0, 1, 2],
                             [5, 3, 1]])
@@ -77,6 +80,7 @@ Fonction
 .. tab:: Resultats
 
     .. code-block:: Python
+        :emphasize-lines: 1,6
 
         Lower triangular matrix (L):
         [[1.  0.  0. ]

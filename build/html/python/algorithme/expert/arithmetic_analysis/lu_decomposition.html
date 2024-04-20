@@ -302,42 +302,42 @@ composantes L et U, ce qui peut être utile dans de nombreuses applications en m
 des données et en ingénierie.</p>
 <section id="fonction">
 <h2>Fonction<a class="headerlink" href="#fonction" title="Lien vers cette rubrique">¶</a></h2>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
-
-<span class="k">def</span> <span class="nf">lu_decompose</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Decomposes a square matrix into its lower triangular matrix (L) and upper triangular matrix (U) using LU decomposition.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        matrix: The square matrix to be decomposed.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">        L: The lower triangular matrix.</span>
-<span class="sd">        U: The upper triangular matrix.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">rows</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
-    <span class="n">L</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="p">))</span>
-    <span class="n">U</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="p">))</span>
-
-    <span class="k">if</span> <span class="n">rows</span> <span class="o">!=</span> <span class="n">columns</span><span class="p">:</span>
-        <span class="k">return</span> <span class="p">[]</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">columns</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-            <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
-                <span class="nb">sum</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
-            <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="nb">sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">U</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
-
-        <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
-            <span class="n">sum1</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-                <span class="n">sum1</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
-            <span class="n">U</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">sum1</span>
-
-    <span class="k">return</span> <span class="n">L</span><span class="p">,</span> <span class="n">U</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">numpy</span>
+</span><span class="linenos"> 2</span>
+<span class="hll"><span class="linenos"> 3</span><span class="k">def</span> <span class="nf">lu_decompose</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+</span><span class="linenos"> 4</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 5</span><span class="sd">    Decomposes a square matrix into its lower triangular matrix (L) and upper triangular matrix (U) using LU decomposition.</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="sd">    Args:</span>
+<span class="linenos"> 8</span><span class="sd">        matrix: The square matrix to be decomposed.</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="sd">    Returns:</span>
+<span class="linenos">11</span><span class="sd">        L: The lower triangular matrix.</span>
+<span class="linenos">12</span><span class="sd">        U: The upper triangular matrix.</span>
+<span class="linenos">13</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">14</span>    <span class="n">rows</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+<span class="linenos">15</span>    <span class="n">L</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="p">))</span>
+<span class="linenos">16</span>    <span class="n">U</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="p">))</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span>    <span class="k">if</span> <span class="n">rows</span> <span class="o">!=</span> <span class="n">columns</span><span class="p">:</span>
+<span class="linenos">19</span>        <span class="k">return</span> <span class="p">[]</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">columns</span><span class="p">):</span>
+<span class="linenos">22</span>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="linenos">23</span>            <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">24</span>            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
+<span class="linenos">25</span>                <span class="nb">sum</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+<span class="linenos">26</span>            <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="nb">sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">U</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span>        <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
+<span class="linenos">31</span>            <span class="n">sum1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">32</span>            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="linenos">33</span>                <span class="n">sum1</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+<span class="linenos">34</span>            <span class="n">U</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">sum1</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span>    <span class="k">return</span> <span class="n">L</span><span class="p">,</span> <span class="n">U</span>
 </pre></div>
 </div>
 <div class="tab-set docutils container">
@@ -346,22 +346,22 @@ des données et en ingénierie.</p>
                     <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
                     <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
 
-<span class="n">L</span><span class="p">,</span> <span class="n">U</span> <span class="o">=</span> <span class="n">lu_decompose</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lower triangular matrix (L):&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Upper triangular matrix (U):&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
-</pre></div>
+<span class="hll"><span class="n">L</span><span class="p">,</span> <span class="n">U</span> <span class="o">=</span> <span class="n">lu_decompose</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lower triangular matrix (L):&quot;</span><span class="p">)</span>
+<span class="hll"><span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Upper triangular matrix (U):&quot;</span><span class="p">)</span>
+<span class="hll"><span class="nb">print</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+</span></pre></div>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Resultats</label><div class="tab-content docutils container">
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">Lower</span> <span class="n">triangular</span> <span class="n">matrix</span> <span class="p">(</span><span class="n">L</span><span class="p">):</span>
-<span class="p">[[</span><span class="mf">1.</span>  <span class="mf">0.</span>  <span class="mf">0.</span> <span class="p">]</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="n">Lower</span> <span class="n">triangular</span> <span class="n">matrix</span> <span class="p">(</span><span class="n">L</span><span class="p">):</span>
+</span><span class="p">[[</span><span class="mf">1.</span>  <span class="mf">0.</span>  <span class="mf">0.</span> <span class="p">]</span>
 <span class="p">[</span><span class="mf">0.</span>  <span class="mf">1.</span>  <span class="mf">0.</span> <span class="p">]</span>
 <span class="p">[</span><span class="mf">2.5</span> <span class="mf">8.</span>  <span class="mf">1.</span> <span class="p">]]</span>
 
-<span class="n">Upper</span> <span class="n">triangular</span> <span class="n">matrix</span> <span class="p">(</span><span class="n">U</span><span class="p">):</span>
-<span class="p">[[</span>  <span class="mf">2.</span>   <span class="o">-</span><span class="mf">2.</span>    <span class="mf">1.</span> <span class="p">]</span>
+<span class="hll"><span class="n">Upper</span> <span class="n">triangular</span> <span class="n">matrix</span> <span class="p">(</span><span class="n">U</span><span class="p">):</span>
+</span><span class="p">[[</span>  <span class="mf">2.</span>   <span class="o">-</span><span class="mf">2.</span>    <span class="mf">1.</span> <span class="p">]</span>
 <span class="p">[</span>  <span class="mf">0.</span>    <span class="mf">1.</span>    <span class="mf">2.</span> <span class="p">]</span>
 <span class="p">[</span>  <span class="mf">0.</span>    <span class="mf">0.</span>  <span class="o">-</span><span class="mf">17.5</span><span class="p">]]</span>
 </pre></div>

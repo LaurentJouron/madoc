@@ -16,7 +16,9 @@ Ce style est similaire au style :doc:`Google <google>`, mais utilise des section
 ⚙️ NumPy/SciPy
 
 .. code-block:: Python
-
+    :emphasize-lines: 1
+    :linenos:
+    
     def multiply_matrix(matrix, scalar):
         """
         Multiply a matrix by a scalar.
@@ -35,32 +37,30 @@ Ce style est similaire au style :doc:`Google <google>`, mais utilise des section
         """
         return matrix * scalar
 
-Affiche les docstrings
-----------------------
 
-.. code-block:: Python
+.. tab:: Utilisation
+    
+    .. code-block:: Python
 
-    print(multiply_matrix.__doc__)
+        print(multiply_matrix.__doc__)
 
+.. tab:: Resultats
 
-Resultats
----------
+    .. code-block:: Python
 
-.. code-block:: Python
+        Multiply a matrix by a scalar.
 
-    Multiply a matrix by a scalar.
+        Parameters
+        ----------
+        matrix : numpy.ndarray
+            The input matrix to be multiplied.
+        scalar : int or float
+            The scalar value to multiply the matrix by.
 
-    Parameters
-    ----------
-    matrix : numpy.ndarray
-        The input matrix to be multiplied.
-    scalar : int or float
-        The scalar value to multiply the matrix by.
-
-    Returns
-    -------
-    numpy.ndarray
-        The resulting matrix after multiplication.
+        Returns
+        -------
+        numpy.ndarray
+            The resulting matrix after multiplication.
 
 .. note::
 

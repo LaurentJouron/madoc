@@ -296,34 +296,32 @@
 </a>
 <p>Ce style est similaire au style <a class="reference internal" href="google.html"><span class="doc">Google</span></a>, mais utilise des sections spécifiques pour décrire les paramètres, les valeurs de retour, etc.</p>
 <p>⚙️ NumPy/SciPy</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">multiply_matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">scalar</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Multiply a matrix by a scalar.</span>
-
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    matrix : numpy.ndarray</span>
-<span class="sd">        The input matrix to be multiplied.</span>
-<span class="sd">    scalar : int or float</span>
-<span class="sd">        The scalar value to multiply the matrix by.</span>
-
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    numpy.ndarray</span>
-<span class="sd">        The resulting matrix after multiplication.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">matrix</span> <span class="o">*</span> <span class="n">scalar</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span><span class="k">def</span> <span class="nf">multiply_matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">scalar</span><span class="p">):</span>
+</span><span class="linenos"> 2</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="sd">    Multiply a matrix by a scalar.</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="sd">    Parameters</span>
+<span class="linenos"> 6</span><span class="sd">    ----------</span>
+<span class="linenos"> 7</span><span class="sd">    matrix : numpy.ndarray</span>
+<span class="linenos"> 8</span><span class="sd">        The input matrix to be multiplied.</span>
+<span class="linenos"> 9</span><span class="sd">    scalar : int or float</span>
+<span class="linenos">10</span><span class="sd">        The scalar value to multiply the matrix by.</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="sd">    Returns</span>
+<span class="linenos">13</span><span class="sd">    -------</span>
+<span class="linenos">14</span><span class="sd">    numpy.ndarray</span>
+<span class="linenos">15</span><span class="sd">        The resulting matrix after multiplication.</span>
+<span class="linenos">16</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">17</span>    <span class="k">return</span> <span class="n">matrix</span> <span class="o">*</span> <span class="n">scalar</span>
 </pre></div>
 </div>
-</section>
-<section id="affiche-les-docstrings">
-<h2>Affiche les docstrings<a class="headerlink" href="#affiche-les-docstrings" title="Lien vers cette rubrique">¶</a></h2>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Utilisation</label><div class="tab-content docutils container">
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">multiply_matrix</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="resultats">
-<h2>Resultats<a class="headerlink" href="#resultats" title="Lien vers cette rubrique">¶</a></h2>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Resultats</label><div class="tab-content docutils container">
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">Multiply</span> <span class="n">a</span> <span class="n">matrix</span> <span class="n">by</span> <span class="n">a</span> <span class="n">scalar</span><span class="o">.</span>
 
 <span class="n">Parameters</span>
@@ -338,6 +336,8 @@
 <span class="n">numpy</span><span class="o">.</span><span class="n">ndarray</span>
     <span class="n">The</span> <span class="n">resulting</span> <span class="n">matrix</span> <span class="n">after</span> <span class="n">multiplication</span><span class="o">.</span>
 </pre></div>
+</div>
+</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -405,8 +405,6 @@
             <ul>
 <li><a class="reference internal" href="#">Numpy/Scipy</a><ul>
 <li><a class="reference internal" href="#style-numpy-scipy">Style NumPy/Scipy</a></li>
-<li><a class="reference internal" href="#affiche-les-docstrings">Affiche les docstrings</a></li>
-<li><a class="reference internal" href="#resultats">Resultats</a></li>
 </ul>
 </li>
 </ul>

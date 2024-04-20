@@ -27,6 +27,8 @@ Fonction
 --------
 
 .. code-block:: Python
+    :emphasize-lines: 1,23,27
+    :linenos:
 
     def newton_method(function, derivative_function, starting_point):
         """
@@ -61,6 +63,7 @@ Fonction
 .. tab:: Utilisation
     
     .. code-block:: Python
+        :emphasize-lines: 1
 
         root = newton_method(f, f1, 3)
         print(f"Approximated root: {root}")

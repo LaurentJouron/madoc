@@ -25,6 +25,8 @@ Fonction
 --------
 
 .. code-block:: Python
+    :emphasize-lines: 1,3,25
+    :linenos:
 
     import math
 

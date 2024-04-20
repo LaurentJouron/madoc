@@ -304,75 +304,75 @@ utilisations courantes des arbres binaires :</p>
 <p>En résumé, les arbres binaires sont des structures de données polyvalentes utilisées dans de nombreux domaines de l’informatique pour stocker, organiser et manipuler des données de manière efficace et structurée. Ils offrent une grande flexibilité et sont largement utilisés dans le développement de logiciels pour diverses applications.</p>
 <section id="fonction">
 <h2>Fonction<a class="headerlink" href="#fonction" title="Lien vers cette rubrique">¶</a></h2>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TreeNode</span><span class="p">:</span>
-<span class="sd">&quot;&quot;&quot;Class representing a node in a binary tree.&quot;&quot;&quot;</span>
-<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Initializes a node with data and left and right pointers.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        data: The data to be stored in the node.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="kc">None</span>
-
-
-<span class="k">def</span> <span class="nf">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Recursive function to find the depth of a binary tree.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        tree (TreeNode): The root node of the tree.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">        int: The depth of the tree.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">tree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">depth_left_tree</span> <span class="o">=</span> <span class="n">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
-        <span class="n">depth_right_tree</span> <span class="o">=</span> <span class="n">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">depth_left_tree</span> <span class="o">&gt;</span> <span class="n">depth_right_tree</span><span class="p">:</span>
-            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">depth_left_tree</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">depth_right_tree</span>
-
-
-<span class="k">def</span> <span class="nf">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Function to check if a binary tree is full.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        tree (TreeNode): The root node of the tree.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">        bool: True if the tree is full, False otherwise.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">tree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="p">)</span> <span class="ow">and</span> <span class="n">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Main function for testing.</span>
-
-<span class="sd">    Creates a binary tree, then checks if it&#39;s full and calculates its depth.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">tree</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-    <span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="n">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">))</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span><span class="k">class</span> <span class="nc">TreeNode</span><span class="p">:</span>
+</span><span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;Class representing a node in a binary tree.&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<span class="linenos"> 4</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Initializes a node with data and left and right pointers.</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="sd">    Args:</span>
+<span class="linenos"> 7</span><span class="sd">        data: The data to be stored in the node.</span>
+<span class="linenos"> 8</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos"> 9</span>    <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+<span class="linenos">10</span>    <span class="bp">self</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="linenos">11</span>    <span class="bp">self</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="k">def</span> <span class="nf">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">):</span>
+<span class="linenos">15</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Recursive function to find the depth of a binary tree.</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="sd">    Args:</span>
+<span class="linenos">18</span><span class="sd">        tree (TreeNode): The root node of the tree.</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="sd">    Returns:</span>
+<span class="linenos">21</span><span class="sd">        int: The depth of the tree.</span>
+<span class="linenos">22</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">23</span>    <span class="k">if</span> <span class="n">tree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">24</span>        <span class="k">return</span> <span class="mi">0</span>
+<span class="linenos">25</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">26</span>        <span class="n">depth_left_tree</span> <span class="o">=</span> <span class="n">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+<span class="linenos">27</span>        <span class="n">depth_right_tree</span> <span class="o">=</span> <span class="n">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+<span class="linenos">28</span>        <span class="k">if</span> <span class="n">depth_left_tree</span> <span class="o">&gt;</span> <span class="n">depth_right_tree</span><span class="p">:</span>
+<span class="linenos">29</span>            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">depth_left_tree</span>
+<span class="linenos">30</span>        <span class="k">else</span><span class="p">:</span>
+<span class="linenos">31</span>            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">depth_right_tree</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span>
+<span class="hll"><span class="linenos">34</span><span class="k">def</span> <span class="nf">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">):</span>
+</span><span class="linenos">35</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Function to check if a binary tree is full.</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="sd">    Args:</span>
+<span class="linenos">38</span><span class="sd">        tree (TreeNode): The root node of the tree.</span>
+<span class="linenos">39</span>
+<span class="linenos">40</span><span class="sd">    Returns:</span>
+<span class="linenos">41</span><span class="sd">        bool: True if the tree is full, False otherwise.</span>
+<span class="linenos">42</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">43</span>    <span class="k">if</span> <span class="n">tree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">44</span>        <span class="k">return</span> <span class="kc">True</span>
+<span class="linenos">45</span>    <span class="k">if</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span>
+<span class="linenos">46</span>        <span class="k">return</span> <span class="kc">True</span>
+<span class="linenos">47</span>    <span class="k">if</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">):</span>
+<span class="linenos">48</span>        <span class="k">return</span> <span class="n">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="p">)</span> <span class="ow">and</span> <span class="n">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+<span class="linenos">49</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">50</span>        <span class="k">return</span> <span class="kc">False</span>
+<span class="linenos">51</span>
+<span class="linenos">52</span>
+<span class="hll"><span class="linenos">53</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span><span class="linenos">54</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Main function for testing.</span>
+<span class="linenos">55</span>
+<span class="linenos">56</span><span class="sd">    Creates a binary tree, then checks if it&#39;s full and calculates its depth.</span>
+<span class="linenos">57</span><span class="sd">    &quot;&quot;&quot;</span>
+<span class="linenos">58</span>    <span class="n">tree</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="linenos">59</span>    <span class="n">tree</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="linenos">60</span>    <span class="n">tree</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="linenos">61</span>    <span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="linenos">62</span>    <span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="linenos">63</span>    <span class="n">tree</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="linenos">64</span>    <span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="linenos">65</span>    <span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="linenos">66</span>    <span class="n">tree</span><span class="o">.</span><span class="n">right</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">left</span><span class="o">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<span class="linenos">67</span>
+<span class="linenos">68</span>    <span class="nb">print</span><span class="p">(</span><span class="n">is_full_binary_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">))</span>
+<span class="linenos">69</span>    <span class="nb">print</span><span class="p">(</span><span class="n">depth_of_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">))</span>
 </pre></div>
 </div>
 <div class="tab-set docutils container">

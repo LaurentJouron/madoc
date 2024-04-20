@@ -1,4 +1,4 @@
 Project contributors
 ====================
 
-* Laurent Jouron <https://github.com/LaurentJouron>
+* `Laurent Jouron <https://laurentjouron.github.io/>`_

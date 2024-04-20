@@ -54,6 +54,8 @@ Définir les fonctions
 get_html_content(url) enverra une requête GET à l'URL fournie et renverra le contenu HTML de la page Web.
 
 .. code-block:: Python
+    :emphasize-lines: 1
+    :linenos:
 
     def get_html_content(url):
         try:
@@ -68,6 +70,8 @@ get_html_content(url) enverra une requête GET à l'URL fournie et renverra le c
 Définir une autre fonction nommée extract_meta_tags(html_content) qui extrait toutes les balises méta du contenu HTML.
 
 .. code-block:: Python
+    :emphasize-lines: 1
+    :linenos:
 
     def extract_meta_tags(html_content):
         try:
@@ -84,6 +88,8 @@ Définir une autre fonction nommée extract_meta_tags(html_content) qui extrait 
 Définir une autre fonction nommée extract_script_tags(html_content) pour extraire toutes les balises de script du contenu HTML fourni.
 
 .. code-block:: Python
+    :emphasize-lines: 1
+    :linenos:
 
     def extract_script_tags(html_content):
         try:
@@ -100,6 +106,8 @@ Définir une autre fonction nommée extract_script_tags(html_content) pour extra
 Nous définirons une fonction nommée extract_technologies_from_meta_tags(meta_tags)pour extraire les technologies mentionnées dans les balises méta fournies.
 
 .. code-block:: Python
+    :emphasize-lines: 1
+    :linenos:
 
     def extract_technologies_from_meta_tags(meta_tags):
         technologies = set()
@@ -114,6 +122,8 @@ Nous définirons une fonction nommée extract_technologies_from_meta_tags(meta_t
 Définirons une autre fonction nommée extract_technologies_from_script_tags(script_tags) pour extraire les technologies des URL de la bibliothèque JavaScript mentionnées dans les balises de script.
 
 .. code-block:: Python
+    :emphasize-lines: 1
+    :linenos:
 
     def extract_technologies_from_script_tags(script_tags):
         technologies = set()
@@ -131,6 +141,8 @@ Définirons une autre fonction nommée extract_technologies_from_script_tags(scr
 Création d'une fonction nommée get_detected_technologies(url) qui orchestre le processus de détection des technologies utilisées dans un site Web.
 
 .. code-block:: Python
+    :emphasize-lines: 1
+    :linenos:
 
     def get_detected_technologies(url):
         html_content = get_html_content(url)
@@ -149,6 +161,8 @@ Bloc principal
 --------------
 
 .. code-block:: Python
+    :emphasize-lines: 1
+    :linenos:
 
     if __name__ == "__main__":
         website_url = input("Enter the URL of the website: ")
