@@ -8,3 +8,4 @@ Expert
 
    arithmetic_analysis/index
    binary_tree
+   graph/index

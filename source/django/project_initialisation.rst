@@ -80,4 +80,5 @@ installation de Django
 
     .. raw:: html
 
-        <strong> Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
+        <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
+        <strong>Envoyez moi un <a href="mailto:jouronlaurent@hotmail.com" target=_blank>e-mail</a></strong>

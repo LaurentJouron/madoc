@@ -17,4 +17,5 @@ Django
 
    drf/index
    wagtail/index
+   cookiecutter/index
    project_initialisation

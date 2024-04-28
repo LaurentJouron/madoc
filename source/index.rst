@@ -26,6 +26,7 @@ Information
 .. raw:: html
 
    <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
+   <strong>Envoyez moi un <a href="mailto:jouronlaurent@hotmail.com" target=_blank>e-mail</a></strong>
 
 * **Etablissement**: Ikigai
 
@@ -209,6 +210,14 @@ Library
       <img src="https://img.shields.io/badge/requests-006699.svg?style=for-the-badge&logo=python&logoColor=white" alt="Requests Badge">
    </a>
 
+   <a href="https://cookiecutter.readthedocs.io/" target=_blank>
+      <img src="https://img.shields.io/badge/cookiecutter-%23F9E64F.svg?style=for-the-badge&logo=cookiecutter&logoColor=black" alt="Cookiecutter Badge">
+   </a>
+ 
+   <a href="https://cookiecutter-django.readthedocs.io/en/latest/" target=_blank>
+      <img src="https://img.shields.io/badge/cookiecutter%20django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Cookiecutter Django Badge">
+   </a>
+
 
 Convention
 ----------
@@ -276,4 +285,5 @@ Full table of contents
 
     .. raw:: html
 
-        Auteur: <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a>
+      <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
+      <strong>Envoyez moi un <a href="mailto:jouronlaurent@hotmail.com" target=_blank>e-mail</a></strong>

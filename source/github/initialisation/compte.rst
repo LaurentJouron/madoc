@@ -106,3 +106,4 @@ Cette modification n'est pas obligatoire, mais elle est recommandée pour des ra
     .. raw:: html
 
         <strong>Auteur : <a href="https://laurentjouron.github.io/" target=_blank>Laurent Jouron</a></strong>
+        <strong>Envoyez moi un <a href="mailto:jouronlaurent@hotmail.com" target=_blank>e-mail</a></strong>
